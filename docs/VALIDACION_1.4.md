@@ -1,5 +1,7 @@
 # Validación y reproducción de la versión 1.4
 
+[English](VALIDATION_1.4.md) | **Español**
+
 Fecha de esta revisión: **23 de noviembre de 2026**.
 
 ## Referencia probada en Saturn

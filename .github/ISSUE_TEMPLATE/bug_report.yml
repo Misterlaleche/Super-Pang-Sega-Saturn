@@ -1,40 +1,40 @@
-name: Fallo o diferencia respecto al arcade
-description: Problemas de juego, imagen, sonido, rendimiento o carga.
-title: "[Fallo] "
+name: Bug or difference from the arcade game (English)
+description: Report gameplay, graphics, audio, performance, or loading problems in English.
+title: "[Bug] "
 body:
   - type: input
     id: version
     attributes:
-      label: Versión o commit
-      description: Si has compilado la imagen, añade su SHA-256.
+      label: Version or commit
+      description: If you built the image, add its SHA-256.
     validations:
       required: true
   - type: dropdown
     id: environment
     attributes:
-      label: Dónde ocurre
+      label: Where it happens
       options:
-        - Saturn real
+        - Physical Saturn
         - Mednafen
-        - Otro emulador
+        - Other emulator
     validations:
       required: true
   - type: textarea
     id: setup
     attributes:
-      label: Equipo y configuración
-      description: Modelo/región, método de carga, cartuchos y mandos; o versión y ajustes del emulador.
+      label: Equipment and configuration
+      description: Model/region, loading method, cartridges, and controllers; or emulator version and settings.
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Cómo reproducirlo
-      description: Modo, fase y secuencia de acciones. Indica qué ocurre y qué esperabas.
+      label: How to reproduce it
+      description: Mode, stage, and sequence of actions. Describe what happens and what you expected.
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Comprobaciones o material de apoyo
-      description: Registros o una grabación breve si ayudan. No adjuntes ROMs, BIOS ni imágenes de disco.
+      label: Checks or supporting material
+      description: Logs or a short recording if helpful. Do not attach ROMs, BIOS files, or disc images.

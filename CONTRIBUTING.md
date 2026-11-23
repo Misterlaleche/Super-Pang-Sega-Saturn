@@ -1,32 +1,36 @@
-# Colaborar en Super Pang Saturn
+# Contributing to Super Pang Saturn
 
-La referencia de este repositorio es la versión 1.4. Las mejoras deben poder compararse con ella, especialmente cuando afecten a la lógica, al orden de las colisiones o a las operaciones de CD y audio.
+**English** | [Español](CONTRIBUTING.es.md)
 
-## Informar de un problema
+Bug reports and contributions are welcome in English or Spanish.
 
-Abre una incidencia con el modo de juego, la fase y los pasos necesarios para llegar al fallo. Si utilizas una compilación propia, incluye el commit y la huella de `game.bin`. En Linux puede obtenerse con `sha256sum game.bin`; en macOS, con `shasum -a 256 game.bin`.
+The reference for this repository is version 1.4. Improvements must be comparable with it, especially when they affect logic, collision order, or CD and audio operations.
 
-Para pruebas físicas, indica modelo y región de Saturn, método de carga, cartuchos y periféricos conectados. Para pruebas en emulador, indica nombre, versión y configuración relevante. Una grabación breve puede ayudar a describir una anomalía gráfica, un sonido o una parada, pero no hace falta adjuntar una imagen de disco.
+## Reporting a problem
 
-No adjuntes ROMs, BIOS, música, volcados completos de recursos ni imágenes BIN/CUE. Tampoco incluyas datos privados de otras partidas o cuentas. Un registro de diagnóstico, una descripción reproducible y la huella del archivo suelen ser suficientes.
+Open an issue with the game mode, stage, and steps needed to reach the failure. If you use your own build, include the commit and the hash of `game.bin`. On Linux, you can obtain it with `sha256sum game.bin`; on macOS, with `shasum -a 256 game.bin`.
 
-## Proponer cambios
+For physical-hardware tests, specify the Saturn model and region, loading method, cartridges, and connected peripherals. For emulator tests, specify the name, version, and relevant configuration. A short recording can help describe a graphical anomaly, a sound, or a hang, but there is no need to attach a disc image.
 
-Describe el problema, el comportamiento esperado y qué modifica el parche. Mantén los arreglos acotados: un cambio de física, uno de gráficos y otro de carga son más fáciles de comprobar por separado.
+Do not attach ROMs, BIOS files, music, complete asset dumps, or BIN/CUE images. Do not include private data from other play sessions or accounts either. A diagnostic log, a reproducible description, and the file hash are usually sufficient.
 
-No sustituyas rutinas por aproximaciones sin explicar la diferencia respecto al arcade. Si una optimización cambia el orden de las operaciones, documenta por qué mantiene el resultado. Para cambios de memoria, anota los límites y el peor caso que se haya probado.
+## Proposing changes
 
-Conserva los avisos de terceros e identifica cualquier material nuevo y su procedencia. La situación de las licencias se explica en [Derechos y créditos](docs/DERECHOS_Y_CREDITOS.md); una contribución no puede conceder derechos sobre recursos del juego original.
+Describe the problem, the expected behavior, and what the patch changes. Keep fixes focused: a physics change, a graphics change, and a loading change are easier to check separately.
 
-## Comprobaciones
+Do not replace routines with approximations without explaining the difference from the arcade game. If an optimization changes the order of operations, document why it preserves the result. For memory changes, record the limits and the worst case that has been tested.
 
-Las pruebas de las herramientas de publicación no necesitan los recursos del juego:
+Keep third-party notices and identify any new material and its provenance. The licensing situation is explained in [Rights and credits](docs/RIGHTS_AND_CREDITS.md); a contribution cannot grant rights to assets from the original game.
+
+## Checks
+
+The publication-tool tests do not need the game assets:
 
 ```sh
 python3 -m unittest discover -s tools/tests -v
 ```
 
-Con los recursos locales y la toolchain disponibles:
+With local assets and the toolchain available:
 
 ```sh
 python3 tools/import_resources.py --check
@@ -34,4 +38,4 @@ python3 tools/build.py
 python3 tools/verify_disc.py
 ```
 
-Si el cambio afecta al juego, añade los pasos y los resultados de la prueba funcional. Distingue siempre las comprobaciones del ordenador, el emulador y la consola. Compilar correctamente no demuestra que una situación de juego esté resuelta.
+If the change affects the game, add the functional-test steps and results. Always distinguish checks on the computer, in the emulator, and on the console. A successful build does not demonstrate that a gameplay situation has been resolved.

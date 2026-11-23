@@ -1,5 +1,7 @@
 # Arquitectura de Super Pang Saturn 1.4
 
+[English](ARCHITECTURE.md) | **Español**
+
 Super Pang Saturn ejecuta la lógica del juego como código C nativo para SH-2, con una copia modificada de **Jo Engine 2026.3** como base. La configuración de 1.4 utiliza el SH-2 maestro, presenta la imagen a **320 × 240** y reproduce música y efectos PCM mediante el SCSP. El reparto efectivo entre procesadores y chips se describe aquí a partir del código que compila esta versión.
 
 El punto de partida arcade pertenece al hardware Mitchell: CPU de la familia Z80 con protección Kabuki y sonido YM2413/OKI M6295. La referencia externa para esta identificación es el [controlador Mitchell de MAME](https://github.com/mamedev/mame/blob/master/src/mame/capcom/mitchell.cpp). Las variantes bootleg descritas en ese mismo archivo tienen diferencias de hardware; sus configuraciones no deben trasladarse a este port.

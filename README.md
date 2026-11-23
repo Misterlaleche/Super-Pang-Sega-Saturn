@@ -1,97 +1,113 @@
-# Super Pang para Sega Saturn
+# Super Pang for Sega Saturn
 
-Port no oficial de **Super Pang**, el arcade de Mitchell de 1990, para Sega Saturn. La versión de referencia es **SuperPang 1.4** y ya funciona en una Saturn real. El proyecto sigue en desarrollo: quedan diferencias que revisar, situaciones de juego que probar y trabajo de rendimiento y compatibilidad.
+**English** | [Español](README.es.md)
 
-El objetivo es conservar el comportamiento del arcade y adaptarlo a una presentación de **320 × 240**, pensada para jugar en CRT. Este repositorio reúne el código del port, la copia de Jo Engine utilizada, las herramientas de construcción y las notas técnicas. También explica los límites de la versión actual y qué hace falta para compilar una imagen propia.
+An unofficial Sega Saturn port of **Super Pang**, Mitchell's 1990 arcade game. The reference release is **SuperPang 1.4**, which has been confirmed working on real Saturn hardware. This is a work in progress: differences from the arcade still need review, gameplay scenarios need testing, and performance and compatibility need further work.
 
-## Estado de la versión 1.4
+The aim is to preserve the arcade game's behavior while adapting its presentation to **320 × 240** for CRT displays. This repository contains the port's source code, the version of Jo Engine it uses, build tools and technical notes. It also documents the current limitations and what you need to build your own disc image.
 
-| Apartado | Situación actual |
+## Version 1.4 status
+
+| Area | Current status |
 | --- | --- |
-| Consola | Funcionamiento confirmado en Saturn real; el alcance de la prueba está recogido en [Validación](docs/VALIDACION_1.4.md). |
-| Vídeo | NTSC, 320 × 240, progresivo. |
-| Juego | Tour con las 40 fases y su final implementados; modo Panic, opciones, pausa, demostraciones y partidas de uno o dos jugadores. Su presencia en el código no equivale a una validación exhaustiva de cada recorrido. |
-| Sonido | Música preparada en PCM y efectos reproducidos por el SCSP. Todo se lee de la pista de datos. |
-| Guardado | Récords y ajustes en la memoria interna de Saturn. |
-| Expansión de RAM | Desactivada en esta construcción. No necesita el cartucho de 4 MB. |
-| SDK | Jo Engine 2026.3, con modificaciones locales. |
-| Compilador | GCC 13.2.0 para SH-2, big endian, con optimización durante el enlace. |
+| Hardware | Confirmed working on a real Saturn; the scope of that test is recorded in [Validation](docs/VALIDATION_1.4.md). |
+| Video | NTSC, 320 × 240, progressive. |
+| Gameplay | All 40 Tour stages and the ending are implemented, along with Panic mode, options, pause, attract sequences and one- or two-player games. Their presence in the code does not mean every playthrough has been thoroughly tested. |
+| Audio | Music prepared as PCM and sound effects played through the SCSP. All audio is read from the data track. |
+| Saving | High scores and settings saved to the Saturn's internal backup memory. |
+| RAM expansion | Disabled in this build. A 4 MB cartridge is not required. |
+| SDK | Jo Engine 2026.3, with local modifications. |
+| Compiler | GCC 13.2.0 targeting SH-2, big endian, with link-time optimization. |
 
-La [lista de pendientes](docs/ESTADO.md) distingue las funciones implementadas de las comprobadas. No se presenta esta versión como una reproducción perfecta ni como un port terminado.
+The [status and outstanding work](docs/STATUS.md) document distinguishes implemented features from verified behavior. Version 1.4 is neither a finished port nor a claim of perfect arcade accuracy.
 
-## Cómo se ha llevado a Saturn
+## Bringing the arcade game to Saturn
 
-El punto de partida es **Super Pang (World 900914)**. Su placa pertenece a la familia Mitchell: utiliza un procesador compatible con Z80, con protección Kabuki, gráficos por caracteres y objetos, y sonido YM2413/OKIM6295. La identificación y el mapa del hardware se pueden consultar en el [driver de MAME](https://github.com/mamedev/mame/blob/master/src/mame/capcom/mitchell.cpp).
+The starting point is **Super Pang (World 900914)**. Its board belongs to the Mitchell hardware family: it uses a Z80-compatible processor with Kabuki protection, character and object graphics, and YM2413/OKIM6295 sound. Hardware identification and the memory map are documented in the [MAME driver](https://github.com/mamedev/mame/blob/master/src/mame/capcom/mitchell.cpp).
 
-El trabajo del port consiste en estudiar esas rutinas y sus datos, trasladar su comportamiento a C y preparar una presentación que encaje en Saturn. En ejecución se emplean rutinas nativas compiladas para SH-2. Se conservan tablas, estados y disposiciones de datos del original donde ayudan a mantener su comportamiento; no hay un intérprete Z80 ejecutando la ROM completa.
+The port involves studying those routines and data, translating their behavior into C, and building a presentation that fits the Saturn. At runtime, the game uses native routines compiled for SH-2. Original tables, states and data layouts are retained where they help preserve the game's behavior; there is no Z80 interpreter running the complete ROM.
 
-La versión 1.4 reparte el trabajo así:
+Version 1.4 divides the work as follows:
 
-- **SH-2 principal:** lógica, controles, colisiones, preparación de gráficos, acceso al CD y servicio del audio. El segundo SH-2 no está habilitado en esta construcción.
-- **VDP1:** personajes, bolas, arpones, objetos y otros elementos móviles, mediante texturas y listas de comandos.
-- **VDP2:** composición final y fondos/HUD sobre un bitmap NBG1 con dos páginas. La CPU prepara los cambios de ese bitmap.
-- **SCSP:** reproducción de las muestras y de los búferes de música. Las músicas están preparadas de antemano; el juego no sintetiza el YM2413 en tiempo real.
+- **Main SH-2:** game logic, controls, collisions, graphics preparation, CD access and audio servicing. The second SH-2 is not enabled in this build.
+- **VDP1:** characters, balls, harpoons, items and other moving elements, using textures and command lists.
+- **VDP2:** final composition and backgrounds/HUD on an NBG1 bitmap with two pages. The CPU prepares changes to that bitmap.
+- **SCSP:** playback of samples and music buffers. Music is prepared ahead of time; the game does not synthesize the YM2413 in real time.
 
-La adaptación gráfica combina composición de celdas, conversión de recursos y ajustes de presentación. El campo horizontal del arcade se lleva de 384 a 320 píxeles; el HUD, los menús y ciertos elementos reciben un tratamiento específico para conservar su legibilidad. Los datos de juego y las coordenadas de pantalla se tratan por separado.
+The graphics adaptation combines cell composition, asset conversion and presentation adjustments. The arcade's horizontal playfield is mapped from 384 to 320 pixels; the HUD, menus and certain elements receive specific treatment to keep them readable. Game data and screen coordinates are handled separately.
 
-La explicación completa, con enlaces a las funciones y módulos, está en [Arquitectura](docs/ARQUITECTURA.md).
+[Architecture](docs/ARCHITECTURE.md) explains the implementation in detail, with links to the relevant functions and modules.
 
-## Dónde está la dificultad
+## What makes the port difficult
 
-Saturn tiene varios procesadores y memorias independientes. Ese reparto obliga a decidir qué datos están residentes, qué debe descomprimirse, cuándo se puede cambiar de página y cuánto tiempo queda para atender el CD. La capacidad libre de una memoria no resuelve una falta de espacio en otra.
+The Saturn has several processors and separate memory areas. That arrangement requires decisions about which data stays resident, what must be decompressed, when a page can be switched and how much time remains to service the CD drive. Free space in one memory area does not solve a shortage in another.
 
-También hay que conservar el orden de las operaciones del juego: un cambio pequeño en el movimiento de una bola, una colisión, un contador o la secuencia de aparición de objetos puede alterar una partida. El reloj lógico utiliza un acumulador de 2871/3000 por VBlank nominal de 60 Hz; la cadencia de la lógica y la presentación de vídeo se gestionan por separado. Tener una salida de 60 Hz no demuestra que todas las escenas mantengan esa fluidez.
+The order of game operations also matters. A small change to a ball's movement, a collision, a counter or the sequence in which items appear can change a playthrough. The logic clock uses a 2871/3000 accumulator per nominal 60 Hz VBlank; logic updates and video presentation are managed separately. A 60 Hz video output does not establish that every scene runs smoothly at that rate.
 
-La música añade otra exigencia: los búferes deben recibir datos a tiempo mientras se dibuja y se actualiza la partida. Por eso se han preparado efectos residentes y prefijos de música, y se han acotado las operaciones que pueden bloquear durante el juego.
+Music adds another requirement: buffers must receive data on time while rendering and game updates continue. The port therefore uses resident sound effects, preloads the beginnings of music tracks, and limits operations that can block during gameplay.
 
-Por último, la consola real sigue siendo la referencia. La revisión 1.4 incorpora una coordinación entre las lecturas periódicas de mandos y la inicialización de la memoria de guardado. Fue una respuesta a un bloqueo de arranque que las comprobaciones anteriores no habían descartado. La confirmación en Saturn es un avance; todavía hace falta ampliar las pruebas de recorridos, mandos, guardado y sesiones largas.
+Real hardware remains the reference. Version 1.4 coordinates periodic controller reads with backup-memory initialization. This addressed a startup lockup that earlier checks had not ruled out. Confirmation on Saturn is progress; broader testing of playthroughs, controllers, saving and long sessions is still needed.
 
-## Compilar una copia propia
+## Build your own copy
 
-**El repositorio no incluye los recursos del juego, una ROM arcade, una BIOS de Saturn ni una imagen BIN/CUE.** Algunos datos también estaban incrustados en archivos C; se han tratado como recursos externos y no se publican aquí.
+**This repository does not include game assets, an arcade ROM, a Saturn BIOS or a BIN/CUE disc image.** Some game data was also embedded in C files; it is treated as an external resource and is not published here.
 
-La ruta disponible permite reconstruir la 1.4 con los recursos preparados de un paquete local `SuperPang_1.4_FUENTES.zip`, obtenido y utilizado con los permisos correspondientes. Se verifican sus archivos antes de incorporarlos al árbol de trabajo. **La regeneración completa a partir de `spang.zip` sigue pendiente**: varios conversores conservan dependencias de etapas anteriores que no están en esta entrega. Si solo tienes la ROM arcade, consulta primero [Recursos y procedencia](docs/RECURSOS.md).
+The available build process reconstructs version 1.4 using prepared resources from a local `SuperPang_1.4_FUENTES.zip` archive, obtained and used with the appropriate permissions. Its files are verified before being imported into the working tree. **Complete resource regeneration from `spang.zip` is still pending:** several converters depend on earlier development stages that are not included in this release. If you only have the arcade ROM, read [Resources and provenance](docs/RESOURCES.md) first.
 
-En Linux, con Python 3.11 o posterior, Make, un compilador C del sistema, xorriso y la toolchain SH-2 indicada:
+On Linux, with Python 3.11 or later, Make, a host C compiler, xorriso and the specified SH-2 toolchain:
 
 ```sh
 git clone https://github.com/Misterlaleche/Super-Pang-Sega-Saturn.git
 cd Super-Pang-Sega-Saturn
 
-python3 tools/import_resources.py /ruta/SuperPang_1.4_FUENTES.zip
+python3 tools/import_resources.py /path/to/SuperPang_1.4_FUENTES.zip
 python3 tools/import_resources.py --check
 
-export SATURN_TOOLCHAIN_ROOT=/ruta/sh2eb-elf
+export SATURN_TOOLCHAIN_ROOT=/path/to/sh2eb-elf
 python3 tools/build.py
 python3 tools/verify_disc.py
 ```
 
-El resultado es `game.bin` junto a `game.cue`. La [guía de compilación](docs/COMPILAR.md) detalla las dependencias, las comprobaciones y la preparación para emulador, MODE o CD-R. La presencia de un archivo entre las dependencias no concede permiso para redistribuirlo.
+The output is `game.bin` together with `game.cue`. The [build guide](docs/BUILDING.md) covers dependencies, checks and preparation for an emulator, MODE or CD-R. A file's inclusion among the dependencies does not grant permission to redistribute it.
 
-## Contenido del repositorio
+## Repository contents
 
-| Ruta | Contenido |
+| Path | Contents |
 | --- | --- |
-| [`main.c`](main.c) | Inicio, bucle principal y coordinación entre juego, vídeo y audio. |
-| [`stage/`](stage/) | Lógica del juego, fases, bolas, armas, objetos, fauna y modos. |
-| [`frontend/`](frontend/) | Título, menús, opciones, récords y ajustes. |
-| [`renderer.c`](renderer.c), [`render_common.c`](render_common.c) | Presentación de sprites, escenarios, texto y conversiones de coordenadas. |
-| [`audio/`](audio/) | Reproducción, cachés y herramientas históricas de preparación de audio. |
-| [`jo_engine/`](jo_engine/) | Copia del motor usada por la 1.4, con sus modificaciones y avisos. |
-| [`Compiler/COMMON/`](Compiler/COMMON/) | Enlace, cabecera del disco y utilidades de creación de imágenes. |
-| [`art/`](art/) | Conversores y código de descompresión; los píxeles del juego se aportan localmente. |
-| [`resources/`](resources/) | Inventario de dependencias y huellas de la versión de referencia. |
-| [`tools/`](tools/) | Importación local, compilación y verificación. |
-| [`docs/`](docs/) | Arquitectura, estado, construcción, procedencia y validación. |
+| [`main.c`](main.c) | Startup, main loop and coordination between gameplay, video and audio. |
+| [`stage/`](stage/) | Game logic, stages, balls, weapons, items, animals and modes. |
+| [`frontend/`](frontend/) | Title screen, menus, options, high scores and settings. |
+| [`renderer.c`](renderer.c), [`render_common.c`](render_common.c) | Rendering of sprites, stages and text, and coordinate conversion. |
+| [`audio/`](audio/) | Playback, caches and historical audio preparation tools. |
+| [`jo_engine/`](jo_engine/) | The engine copy used by version 1.4, including local changes and notices. |
+| [`Compiler/COMMON/`](Compiler/COMMON/) | Linking, disc header and image creation utilities. |
+| [`art/`](art/) | Converters and decompression code; game pixel data must be supplied locally. |
+| [`resources/`](resources/) | Dependency inventory and hashes for the reference release. |
+| [`tools/`](tools/) | Local resource import, building and verification. |
+| [`docs/`](docs/) | Architecture, status, building, provenance and validation. |
 
-Los conversores históricos se conservan para documentar el proceso. Sus dependencias están descritas en [Recursos](docs/RECURSOS.md); el comando de construcción soportado es `python3 tools/build.py`.
+Historical converters are retained to document the process. Their dependencies are explained in [Resources](docs/RESOURCES.md); the supported build command is `python3 tools/build.py`.
 
-## Colaborar y comunicar fallos
+## Documentation
 
-Para un fallo en consola, ayuda indicar la versión, el modelo de Saturn, el método de carga, los mandos conectados y los pasos para reproducirlo. Una fase concreta y una secuencia breve de acciones suelen aportar más que una descripción general de que el juego va lento. Los detalles están en [CONTRIBUTING.md](CONTRIBUTING.md).
+| Guide | English | Español |
+| --- | --- | --- |
+| Build requirements and instructions | [Building](docs/BUILDING.md) | [Compilar](docs/COMPILAR.md) |
+| Hardware and implementation | [Architecture](docs/ARCHITECTURE.md) | [Arquitectura](docs/ARQUITECTURA.md) |
+| Features, limitations and outstanding work | [Status](docs/STATUS.md) | [Estado](docs/ESTADO.md) |
+| Local resources and provenance | [Resources](docs/RESOURCES.md) | [Recursos](docs/RECURSOS.md) |
+| Version 1.4 validation and evidence | [Validation](docs/VALIDATION_1.4.md) | [Validación](docs/VALIDACION_1.4.md) |
+| Rights, licenses and credits | [Rights and credits](docs/RIGHTS_AND_CREDITS.md) | [Derechos y créditos](docs/DERECHOS_Y_CREDITOS.md) |
+| Contributions and hardware reports | [Contributing](CONTRIBUTING.md) | [Colaborar](CONTRIBUTING.es.md) |
 
-## Derechos y créditos
+## Contributing and reporting bugs
 
-Super Pang Saturn es un proyecto no oficial y sin afiliación con Mitchell, Capcom o SEGA. Los nombres, gráficos, música y demás materiales originales pertenecen a sus respectivos titulares. Jo Engine y el resto de componentes de terceros conservan sus propios avisos y condiciones; este repositorio no aplica la licencia del motor al juego original.
+Contributions and reports are welcome in English or Spanish.
 
-Consulta [Derechos y créditos](docs/DERECHOS_Y_CREDITOS.md) antes de reutilizar código o distribuir archivos. La licencia general de las aportaciones propias del port todavía no se ha establecido.
+For a hardware issue, include the version, Saturn model, loading method, connected controllers and steps to reproduce it. A specific stage and a short sequence of actions are usually more useful than a general description that the game runs slowly. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## Rights and credits
+
+Super Pang Saturn is an unofficial project with no affiliation to Mitchell, Capcom or SEGA. The original names, graphics, music and other materials belong to their respective rights holders. Jo Engine and other third-party components retain their own notices and terms; this repository does not apply the engine's license to the original game.
+
+Read [Rights and credits](docs/RIGHTS_AND_CREDITS.md) before reusing code or distributing files. An overall license for the port's own contributions has not yet been established.

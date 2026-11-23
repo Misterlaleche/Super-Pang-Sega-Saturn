@@ -1,5 +1,7 @@
 # Estado de Super Pang Saturn 1.4
 
+[English](STATUS.md) | **Español**
+
 **Super Pang Saturn sigue en desarrollo. La versión 1.4 funciona en una Saturn física, según la confirmación actual recibida para esta entrega.** Esa confirmación se registra con alcance general. Las pruebas específicas que acompañaban al paquete se describen por separado, porque proceden de análisis del código, pruebas en el equipo de desarrollo y sesiones de Mednafen.
 
 El objetivo de este documento es distinguir lo que el código implementa, lo que cambia en 1.4 y lo que permiten afirmar las comprobaciones disponibles. La explicación del funcionamiento interno está en [ARQUITECTURA.md](ARQUITECTURA.md).

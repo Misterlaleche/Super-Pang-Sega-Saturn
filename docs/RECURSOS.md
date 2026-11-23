@@ -1,5 +1,7 @@
 # Recursos y procedencia
 
+[English](RESOURCES.md) | **Español**
+
 ## Qué contiene una construcción de la 1.4
 
 El ejecutable se construye con código C del port y de Jo Engine. Parte de los datos del juego se incorpora al ejecutable y otra parte se carga desde el CD. Por tanto, separar los archivos `.bin` y `.wav` no basta para preparar el árbol público: también hay tablas y píxeles en fuentes C y cabeceras generadas.

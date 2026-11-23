@@ -1,5 +1,7 @@
-# Herramientas de gráficos
+# Graphics tools
 
-Este directorio conserva los conversores utilizados durante las distintas revisiones del port y el descompresor de glifos que usa el juego. Las revisiones forman parte de la historia de preparación; no son un conjunto de comandos intercambiables para reconstruir la versión actual.
+**English** | [Español](README.es.md)
 
-Los recursos gráficos y las cabeceras generadas se aportan localmente. Para la compilación de la 1.4, utiliza [la guía de construcción](../docs/COMPILAR.md). Las dependencias que faltan para reconstruir todo desde la ROM arcade se detallan en [Recursos y procedencia](../docs/RECURSOS.md).
+This directory retains the converters used during the port's different revisions and the glyph decompressor used by the game. These revisions are part of the historical preparation process; they are not an interchangeable set of commands for rebuilding the current version.
+
+The graphics resources and generated headers are supplied locally. To build version 1.4, use [the build guide](../docs/BUILDING.md). The missing dependencies needed to rebuild everything from the arcade ROM are detailed in [Resources and provenance](../docs/RESOURCES.md).

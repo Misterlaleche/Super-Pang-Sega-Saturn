@@ -1,5 +1,7 @@
 # Derechos y créditos
 
+[English](RIGHTS_AND_CREDITS.md) | **Español**
+
 Super Pang Saturn es un proyecto personal de afición y sigue en desarrollo.
 Se comparte para enseñar el trabajo de adaptación a Saturn y documentar cómo
 reconstruirlo localmente. No está afiliado a Mitchell, Capcom ni SEGA.

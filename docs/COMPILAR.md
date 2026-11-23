@@ -1,5 +1,7 @@
 # Compilar Super Pang Saturn 1.4
 
+[English](BUILDING.md) | **Español**
+
 Este repositorio contiene el código del port, la versión de Jo Engine que utiliza
 y las herramientas de compilación del proyecto. Los gráficos, el audio, los
 bancos de datos del juego y la plantilla binaria de arranque se importan desde
