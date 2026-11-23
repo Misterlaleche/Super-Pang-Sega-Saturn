@@ -1,0 +1,30 @@
+{
+  "spang_rice.c": {
+    "source": "vendor/options_o03/vendor/audio/spang_rice.c",
+    "sha256": "cff3e0c8dd7e7a899eabb3b0fbb2170c65b78c4ee4b64cf7d12f94e5cf55431f"
+  },
+  "spang_rice.h": {
+    "source": "vendor/options_o03/vendor/audio/spang_rice.h",
+    "sha256": "4190f31ac5b69d279ef33d9eb5ddedd4ca3a4bb1ae16b42bbe46b24de8091a96"
+  },
+  "spang_oki_adpcm.c": {
+    "source": "vendor/options_o03/vendor/audio/spang_oki_adpcm.c",
+    "sha256": "028109f74096982884965f689710c52a9830269c486bd24c581b85a4cf10d7b2"
+  },
+  "spang_oki_adpcm.h": {
+    "source": "vendor/options_o03/vendor/audio/spang_oki_adpcm.h",
+    "sha256": "d1b69e339d853741a60cbf65121f7c20ed9f1ebfead5833f38243dc1f43636da"
+  },
+  "audio_c13_codec.h": {
+    "source": "saturn/motion/audio_c13_codec.h",
+    "sha256": "432d44c874a8531d4dda2b5c904b404998c9fc635ada820c67ef722a8d9836ea"
+  },
+  "c13_encode.c": {
+    "source": "tools/c13_encode.c",
+    "sha256": "134778c10be3144187d106686258c741d048e33c56c5078414c4feb792ca95eb"
+  },
+  "MAME-OKI-BSD-3-Clause.txt": {
+    "source": "reference/licenses/MAME-OKI-BSD-3-Clause.txt",
+    "sha256": "f29af223aca95506603d1e431a8241ca460cc4db110e85a25fdee272756c571f"
+  }
+}

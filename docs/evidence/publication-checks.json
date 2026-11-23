@@ -1,0 +1,120 @@
+{
+  "release": "SuperPang 1.4",
+  "checked_on": "2026-11-23",
+  "scope": "Source publication and Linux rebuild with locally supplied prepared resources; not a new hardware-tested release.",
+  "original_sources": {
+    "manifest": "../../resources/public-source-reference.json",
+    "files_checked": 293,
+    "all_sha256_match": true,
+    "additional_metadata": {
+      "audio/vendor/PROVENANCE.json": {
+        "bytes": 1178,
+        "sha256": "d467e5d3990a85b133fd2555716cbe7b1b577d32d890309d2a89beda23600b55"
+      }
+    }
+  },
+  "external_resources": {
+    "manifest": "../../resources/manifest.json",
+    "files_checked": 199,
+    "bytes": 198677280,
+    "all_sha256_match": true,
+    "included_in_repository": false
+  },
+  "tooling_tests": {
+    "command": "python3 -m unittest discover -s tools/tests -v",
+    "tests_run": 25,
+    "failures": 0,
+    "errors": 0,
+    "shell_syntax_check": "bash -n tools/prepare_linux_toolchain.sh",
+    "shell_syntax_passed": true
+  },
+  "linux_build": {
+    "command": "SATURN_TOOLCHAIN_ROOT=<prepared-toolchain> python3 tools/build.py",
+    "exit_code": 0,
+    "host": "Linux x86_64",
+    "target": "sh2eb-elf",
+    "gcc": "13.2.0",
+    "linker": "GNU Binutils 2.40 with shared GCC 13.2.0 LTO plugin",
+    "game_and_engine_sources_modified": false,
+    "linker_memory_limits_modified": false,
+    "warnings": [
+      {
+        "file": "jo_engine/vdp2.c",
+        "line": 1318,
+        "kind": "-Wmaybe-uninitialized",
+        "message": "m may be used uninitialized",
+        "function": "jo_vdp2_set_rotation_matrix",
+        "function_symbol_present_in_linked_elf": false
+      }
+    ],
+    "outputs": {
+      "game.elf": {
+        "bytes": 617616,
+        "sha256": "c403f47df0c1aa41c0e33976fe087ae409fe89bcea541ff294db19f2799becfb"
+      },
+      "game.raw": {
+        "bytes": 554576,
+        "sha256": "73e50c32b2d074f2e5434636631e69e429725efb3befd756638a224c45b9af26"
+      },
+      "game.iso": {
+        "bytes": 197429248,
+        "sha256": "9d00fc5cd3ee7852ea430951a689927b32e132e5f6d0596d49053582a5849b27"
+      },
+      "game.bin": {
+        "bytes": 226735152,
+        "sha256": "b0f208561c6db59209372c4394da5b427ae21d831ee7557328944ee3c8baa766"
+      },
+      "game.cue": {
+        "bytes": 88,
+        "sha256": "a963ecf449a707428122f1b2d06917b37334f1f523c2512b2da5b508b61424c8"
+      }
+    },
+    "memory": {
+      "jo_work_end": "0x060E89D0",
+      "stack_begin": "0x060FBC00",
+      "distance_bytes": 78384,
+      "stack_high_water_measurement": false
+    },
+    "disc_verification": {
+      "passed": true,
+      "iso_sha256": "9d00fc5cd3ee7852ea430951a689927b32e132e5f6d0596d49053582a5849b27",
+      "bin_sha256": "b0f208561c6db59209372c4394da5b427ae21d831ee7557328944ee3c8baa766",
+      "cue_sha256": "a963ecf449a707428122f1b2d06917b37334f1f523c2512b2da5b508b61424c8",
+      "iso_bytes": 197429248,
+      "bin_bytes": 226735152,
+      "sectors": 96401,
+      "iso_payload_sha256": "9d00fc5cd3ee7852ea430951a689927b32e132e5f6d0596d49053582a5849b27",
+      "bin_payload_sha256": "9d00fc5cd3ee7852ea430951a689927b32e132e5f6d0596d49053582a5849b27",
+      "all_mode1_payload_sectors_equal": true,
+      "first_bad_sectors": [],
+      "filesystem_file_count": 66,
+      "source_cd_file_count": 66,
+      "missing": [],
+      "extra": [],
+      "payload_mismatches": [],
+      "cue_exact": true
+    },
+    "raw_sector_verification": {
+      "command": "cc -O2 tools/verify_cd_raw.c -o verify_cd_raw && ./verify_cd_raw game.bin",
+      "sectors": 96401,
+      "bad_sectors": 0,
+      "io_error": 0
+    },
+    "bit_identical_to_reference_raw": false,
+    "raw_size_difference_bytes": -384,
+    "cause_of_raw_difference_isolated": false,
+    "tested_in_emulator": false,
+    "tested_on_physical_saturn": false,
+    "binaries_published": false
+  },
+  "original_hardware_confirmation": {
+    "date": "2026-11-23",
+    "source": "Project maintainer report: SuperPang 1.4 works on real Sega Saturn.",
+    "scope": "General functionality confirmation; full route/peripheral/long-session coverage not specified."
+  },
+  "limitations": [
+    "Full regeneration from arcade ROM alone is not available.",
+    "Prepared graphics, audio, data, C headers and boot template must be supplied locally with the corresponding permissions.",
+    "Image integrity checks do not replace gameplay, emulator or physical-console validation."
+  ]
+}

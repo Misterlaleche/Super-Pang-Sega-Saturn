@@ -1,0 +1,1408 @@
+{
+  "schema_version": 1,
+  "release": "Super Pang Saturn 1.4",
+  "description": "Lista cerrada de recursos privados necesarios para compilar. Contiene identidades y tamaños; no contiene los recursos.",
+  "source_archive": {
+    "filename": "SuperPang_1.4_FUENTES.zip",
+    "root": "native320_r09",
+    "size": 185292771,
+    "sha256": "aec07b4b6b3ffb6fc95365e1ebd96c3707bc5d30945a3b283fd4f881a8da8f9e"
+  },
+  "resource_count": 199,
+  "resource_bytes": 198677280,
+  "files": [
+    {
+      "path": "Compiler/COMMON/IP.BIN",
+      "size": 6144,
+      "sha256": "490b2a86c91a32fb98e1c246f966507fb9890d180de8b6372bbabd90f04334b6",
+      "category": "boot_template",
+      "purpose": "Plantilla de arranque Saturn usada por ip.S; se suministra localmente."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/_ansi.h",
+      "size": 2625,
+      "sha256": "5c6403b471ee897c9a6c12e00a58617247804eb3ee72d7baeb7c08616090dd1d",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/_newlib_version.h",
+      "size": 337,
+      "sha256": "93a397574a25b9c143cee7fcb86d8fc9a0c9ba418e4710a30d2d19ba1e4120db",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/_syslist.h",
+      "size": 1170,
+      "sha256": "a588085e0b013247fada5cfd2a294d79ea0fef0223b57443e0c86f529e68f5ac",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/alloca.h",
+      "size": 412,
+      "sha256": "fdebd60de65105d933b55dcde1650f6c9b3cf6142c225397c5f956638208d4de",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/ar.h",
+      "size": 2958,
+      "sha256": "d7aad21a7db658f45925014ea2ffd6cb7ba3d40fad05c9a00e77bfe912577ae3",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/argz.h",
+      "size": 1337,
+      "sha256": "24aa4dd94a5b1d542ae5638cb0232ae5115e0040e029c535581fd7b0a3ebc3a4",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/assert.h",
+      "size": 1172,
+      "sha256": "76d2c321e49e268077d5e6f14e3da71b8f1e28ced650fe3cd403261b3d09923f",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/complex.h",
+      "size": 4384,
+      "sha256": "d83dc1d2527932324a5822c3330bc9070769401eea42d23b6079f779f4710fe5",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/cpio.h",
+      "size": 1072,
+      "sha256": "70007b46d90fb58e511086afe37241abe27a54464105418b41c2b0cc541a1d61",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/ctype.h",
+      "size": 5990,
+      "sha256": "cdf15e7581347623ec96e3dd5e17d002e852ffcb2dd9ab0ea8e2c1a980e154dc",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/devctl.h",
+      "size": 2493,
+      "sha256": "6c3d63c205b497231dcb74b92c1c509a1bcdf2c2cd766dac9149255700efa452",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/dirent.h",
+      "size": 3111,
+      "sha256": "0d2c0fa9f6fc0844a2bef3502b21e24aa95200b9faa77b71cf4b73efa3bcef7a",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/elf.h",
+      "size": 75903,
+      "sha256": "ec24622d27f989cde00b6843fe088f0b4423842f6ab16b549a2238b52c39d6a4",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/envlock.h",
+      "size": 350,
+      "sha256": "09f86b8887f4b636701b99199a6b5184755c33174ce7b68035aa60c364ff5f53",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/envz.h",
+      "size": 781,
+      "sha256": "de0aaab946479a0d95063cfbfcab5793487a5a0b19e051f7be3c3319c351b347",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/errno.h",
+      "size": 174,
+      "sha256": "53d288d669b43f2341048bf58bc5e6e46a5cfbe68c6d296a3b2e2f1378ac3ca8",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/fastmath.h",
+      "size": 185,
+      "sha256": "7fb7ff119150be066f9e06ea4afa62c4fd13def8a15d3dde3968d57d7f82ba66",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/fcntl.h",
+      "size": 23,
+      "sha256": "637889253928e98bc028dbdcd58560492aed8e981eff349c43a8e7e6a45f75f5",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/fenv.h",
+      "size": 1111,
+      "sha256": "950a1a60988c93532171fc60b08e690afbdf9bc75509001344e43d4a910abd2e",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/fnmatch.h",
+      "size": 2325,
+      "sha256": "3a6ca8bce057d57213e430ebff2ebb478d55edcc2fe844eebf13326f2e272f9a",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/getopt.h",
+      "size": 6564,
+      "sha256": "3cc4000afb3722b80000c39012d826aeaf15451d05fb77228eeb982558bf26f0",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/glob.h",
+      "size": 3787,
+      "sha256": "6f5f880b43e6a992ce9dc2ce475d0c903f07a24599768cd97dd010e56348e049",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/grp.h",
+      "size": 3310,
+      "sha256": "8970a8bf7064a4e5843f5bbd838be36c2f1c923e0b87d08b6818e61d339eb7f4",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/iconv.h",
+      "size": 2127,
+      "sha256": "0a91edea4d05ac47f67e8c67e3928445b1079d033fd0c94cd167f94456af25ed",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/ieeefp.h",
+      "size": 6446,
+      "sha256": "b5832d987da4574360acb486ee2dc93e9300ae0ee8001219cb2e41c3df43225e",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/inttypes.h",
+      "size": 9724,
+      "sha256": "20298be1c77c2dc2415575862f7636164965188b293e3465237773928e4380c5",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/langinfo.h",
+      "size": 8479,
+      "sha256": "8bdf054e265cab5b7b243650303c2a477c85910e2a2ed9de7c232546fb71d1fe",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/libgen.h",
+      "size": 854,
+      "sha256": "b8abf8738f130d5d9085af48ae67449a76ea0b6e7b39124a1a36dd23eb96728f",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/limits.h",
+      "size": 3888,
+      "sha256": "16b91bb4b4f7053ddfbbe6ec0925d901093499468151289d5c224d718ec25e44",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/locale.h",
+      "size": 2225,
+      "sha256": "fc543dc6cf75255649ba5b6799feb643fbf6992191246fb034abfc5167cd1e5e",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/_arc4random.h",
+      "size": 51,
+      "sha256": "88a214651e481bc693c67b4c00447cb3f08f3c13285c9971fae24bf4630176ae",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/_default_types.h",
+      "size": 6650,
+      "sha256": "5d8f9f7ead7927e4b8b7ed00172e84f2ae82ea7f5f6ba3240ff813a9236771b3",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/_endian.h",
+      "size": 665,
+      "sha256": "6a2878de2ce76eed443de3891e5dd49c67e3f41eea7054b47f9bd7ec27a144d0",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/_time.h",
+      "size": 91,
+      "sha256": "30d5767d9856a34b13effab3cc2663bc48d77eaf778d313f243b25015dfe1d8b",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/_types.h",
+      "size": 112,
+      "sha256": "44544ecbbc10c8aa58ca2da6d0617ffeee5af847af24515ab108c8218d6d92c8",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/ansi.h",
+      "size": 48,
+      "sha256": "b8920447822ad8f3d5698a3fd70cd0c72d28c1b4d0a57f849ce6e6ccdca2ce72",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/endian.h",
+      "size": 1725,
+      "sha256": "c9cb16333e537785dde867ed059915ef2d09661dbab7cc8b4519b646735eace4",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/fastmath.h",
+      "size": 2804,
+      "sha256": "a8ceea7a1395306b3cd8c9046eaca22bfe6ce26b146a86ed27c85d36aa26bda3",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/ieeefp.h",
+      "size": 9975,
+      "sha256": "92e2d8e284bf07456ffa9b38ed6628b57d4dd1d64a85d20e252144c1cc80b238",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/malloc.h",
+      "size": 138,
+      "sha256": "c6e33eb2fa8cf9038cf4114d87df62468b476caffb045f33949ba97fcaf78a79",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/param.h",
+      "size": 50,
+      "sha256": "04400a508514ef63937aa1067163ac8d1e56549c2fed1c518607d739d1e4ee1d",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/setjmp-dj.h",
+      "size": 947,
+      "sha256": "4b50c451e3f13d626d70a8087a2749fdc21c24cefa63ba416d0f07da92499765",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/setjmp.h",
+      "size": 9556,
+      "sha256": "a7c43830d97e728ebcbd60d5e714769967a270bd42a79b77a6931ffe47bd1409",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/stdlib.h",
+      "size": 138,
+      "sha256": "43552e520d412993325ba62cb496839cd03fd46b0df67149a5ccbe1b95c45fdd",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/termios.h",
+      "size": 29,
+      "sha256": "d6e16ee56b728aff179afd72ac18247320a64c124e43060a9d96261be2ea462c",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/time.h",
+      "size": 384,
+      "sha256": "ac7672170b5e2df1fe1d40a9aa5a83356e7df9c221de771c8dbf79da68e0757d",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/machine/types.h",
+      "size": 372,
+      "sha256": "3be8e785d201f2972db6a96ae1adb4263227623c7e298aded1a662cb8da93ea3",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/malloc.h",
+      "size": 4166,
+      "sha256": "bfe98e78707f66256511d839874b60c9f5d1424510faedce6c8e71c118175a8a",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/math.h",
+      "size": 19520,
+      "sha256": "64ba451d5f24af831b08ac0504e90a729b24759c7f472c1d4a0f3f6b1be35777",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/memory.h",
+      "size": 80,
+      "sha256": "026f83881db9f03068affceaa81aea160f603e11f3c9d657f7140e7af9bb8fc9",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/ndbm.h",
+      "size": 3167,
+      "sha256": "840730d709a942f5050418a7c4c617745a3988cbe40bf2290c95196a1e224380",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/newlib.h",
+      "size": 7314,
+      "sha256": "a9eb3c72af4cbdd2510c95e32dc46f72a7dceffdf8ccd1d00a93d9b386e20a00",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/paths.h",
+      "size": 193,
+      "sha256": "d8a6145404b72ccff930347f8301720350ed3bc11febaf4a1ede636fcb5c8a0c",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/pthread.h",
+      "size": 14671,
+      "sha256": "2d33d992f86f8b6e41f742bc75381b0d35cbcf4ae3ae6a9bb543d0817def15be",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/pwd.h",
+      "size": 2999,
+      "sha256": "5ebae08652f20a8f7d02ff25621ca7607512776ffa1569c6f533203f98263980",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/reent.h",
+      "size": 8493,
+      "sha256": "34629ef5629f53f52053dbb4bad484735aebf48da7e7eb0c14063ec57fe90370",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/regdef.h",
+      "size": 220,
+      "sha256": "e889cdb89b2b0c335eeaff98d11bd5cb455118c798d66d6239130860558197d9",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/regex.h",
+      "size": 3562,
+      "sha256": "3ee2a3455b2a2444c160c0da92e63db6116e5c23f9c6249fa91f1335d5dac32f",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sched.h",
+      "size": 2699,
+      "sha256": "f764c017b8afb592a04b39c21df42a3c50c5d7276e692e6de64be67bd5c1f522",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/search.h",
+      "size": 1367,
+      "sha256": "83dddcba8f3ae086761221b81f1b525bbf199d7446b9d4d853f1ba7c59d924ec",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/setjmp.h",
+      "size": 361,
+      "sha256": "0fddf586b71d441243c6daae9431999872533020d2d39db8a3362d30b754b547",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/signal.h",
+      "size": 774,
+      "sha256": "663ea64d0ea7288f6b7bd4c9c61a28b182a0199278bc39bf5e1cd9570cf24d39",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/spawn.h",
+      "size": 4138,
+      "sha256": "46df6e92c290cb63cecff0ade8ed3959a451cab79e77d0dedd39bf2334ce4ebf",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/stdarg.h",
+      "size": 4072,
+      "sha256": "0b1d4f68c42c238ae96d07e0e9d5868732054fc8ba704c1dde891649ff117483",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/stdatomic.h",
+      "size": 14400,
+      "sha256": "3ceed215c277f7c5ad201531617065372787468a20a33dab84102d05f81a7e6c",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/stddef.h",
+      "size": 12959,
+      "sha256": "45e80e1302342753d2f9e5945248fe3af7cf328a99804d2ec561850bbb550f7d",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/stdint.h",
+      "size": 12432,
+      "sha256": "99fe201684856075ccd92704f63b702f6fa882b9dab61bd7a9bcce2588275861",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/stdio.h",
+      "size": 29725,
+      "sha256": "48c6e22a842695f5ea6147a796da05b8cb3d9422c9d507ac6ccf411fdcac98c9",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/stdio_ext.h",
+      "size": 1799,
+      "sha256": "9c150a3ae08e82d3876a25a254eb8a19b9e80bd7e94e68d38ac4b0b7909404fd",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/stdlib.h",
+      "size": 11687,
+      "sha256": "c9b59cff66dd5f523dae818c7268959c7c640461ce6723913fc2732acb01a962",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/string.h",
+      "size": 5593,
+      "sha256": "3dfccecfe9a38d9cb6d32c371c8269ca5c20e8103ea7f4547c82d38347220634",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/strings.h",
+      "size": 2788,
+      "sha256": "743121afb2f530045eb63bcfa3fdbc4ecf555131bd1cf7ce36a268f758bb4be5",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/_default_fcntl.h",
+      "size": 7261,
+      "sha256": "a413af867956f1e0938361bb5be5dc2dd6effa924a07848829dae50494b0279d",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/_intsup.h",
+      "size": 5741,
+      "sha256": "1af8abe244b43a3a5b5a85f6c834aa206930b6938e8109fbec430bc140b68df5",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/_locale.h",
+      "size": 247,
+      "sha256": "adc8e11513e5f83a0c73ac641c256815b0aa6cc8a09a43d2c97b1ee79db9f154",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/_pthreadtypes.h",
+      "size": 7510,
+      "sha256": "e0924bdccdc1b9983c51436971b690cd58024aa7c56b83f3e076bfc4f51091b6",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/_sigset.h",
+      "size": 2087,
+      "sha256": "16e78626ff97ef85ec70ba9898082fccf70b741b0c6586c57e4421fc60b9a07d",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/_stdint.h",
+      "size": 1824,
+      "sha256": "49f8328943afa2a83ed4a35fcb808ed08b8c9fcb55373c786fb1b1d3a21952d7",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/_timespec.h",
+      "size": 2173,
+      "sha256": "cea8007561c4c9285063cc2f941a284d008e9f044fdfa346572e8bb39f236391",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/_timeval.h",
+      "size": 2188,
+      "sha256": "976b01c11c44422953444b3f612ca6a7d41d70569e25a4c0674e9f8899101b22",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/_types.h",
+      "size": 5027,
+      "sha256": "1bf0428859ddd602938cd25864ba4ebcb7bac003893c1a89d6ff1f11cd04752f",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/cdefs.h",
+      "size": 23259,
+      "sha256": "d8db73988994274b0d28d8abddb8bc555a9687db55d1f54f680e0842e959d296",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/config.h",
+      "size": 7172,
+      "sha256": "04eb2740ca84bfc67686e0650fb6ff449dc6c752e5c256709b22e07d0f9c06e4",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/custom_file.h",
+      "size": 50,
+      "sha256": "7a8f3cc9612d591c93281dc05188d874e2dc7ebfce430f6f44e16b9b1e499bc7",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/dir.h",
+      "size": 171,
+      "sha256": "1b4d4865531636af9f7a493bbbb662e221b6bdfa5061807fbc5a237c94c5b68d",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/dirent.h",
+      "size": 395,
+      "sha256": "be21c82d8ce7898426689c520d0e01fb19d2dda10988ba3dac8f19514723882c",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/errno.h",
+      "size": 7439,
+      "sha256": "9a9125c78ab81fd223146630c99996f81bc4049a2a488360c78609092acc9fca",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/fcntl.h",
+      "size": 83,
+      "sha256": "471e655eee7e30a4a8c5c34a465c0891c85a0bed33a26bd555d7538a91bd6e9b",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/features.h",
+      "size": 15828,
+      "sha256": "92eead7ab3bf7ecb315fd81d0f1eaec250f6d8d7d8574e3cd5d7f80dc779e771",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/fenv.h",
+      "size": 4357,
+      "sha256": "5650cf5c0c5853231f2930c43e20c9d4e0a5977d2b0f8a2f4cbc1a910bdd7dcf",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/file.h",
+      "size": 24,
+      "sha256": "c4e08fdb66f877ddc18fc704b7127aea39766f08593fa833d7f385beea0b5a35",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/iconvnls.h",
+      "size": 2714,
+      "sha256": "dbcc72531a4590fd2b94c75ef02730ed5a1985abbddc7ffee7dff26a4f23a0dc",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/lock.h",
+      "size": 2455,
+      "sha256": "f5cad9196ce745967fd2673e085b5c03df7887d4d11d7544aff05ff6679be6b8",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/param.h",
+      "size": 703,
+      "sha256": "e440a04d5d95c0712db3d434b03fbfd2e996c36eb3453fb26c6f7e62f142902c",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/queue.h",
+      "size": 30288,
+      "sha256": "c622d82410a368e1c437d38473b71fd796b538f9bc322f0a1ef45deb016d6e8b",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/reent.h",
+      "size": 25720,
+      "sha256": "b2c7139f17213669456551b525f782427627d7e92cf18d6f1f6806e8d74e53b0",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/resource.h",
+      "size": 345,
+      "sha256": "df19ba388a1576abb28635ce59770a378a222db5eaa95c2bf1a23e225a1961aa",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/sched.h",
+      "size": 1872,
+      "sha256": "a905a789e215093f6207948dc700e0ce9789cba8b491a6f1b58888a79b466526",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/select.h",
+      "size": 2321,
+      "sha256": "c7a8995e47c133c28b7e976aa5cc6877b4a439b9064e8f555f4aed673a786c60",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/signal.h",
+      "size": 11995,
+      "sha256": "2bcb2d265bb5d0c3d9033c6ff7c83612d60ad4f56fa8da42e5c182e0973e8815",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/stat.h",
+      "size": 5541,
+      "sha256": "3af36c81308f599ec7925c1fe2035f155781aa3674820150929a89b0542d4bb8",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/stddef.h",
+      "size": 12959,
+      "sha256": "45e80e1302342753d2f9e5945248fe3af7cf328a99804d2ec561850bbb550f7d",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/stdio.h",
+      "size": 799,
+      "sha256": "bd987ea6fed5d31d8a4e7d183a7d988e981ecca3cffce76ee482fcb0bf65594b",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/string.h",
+      "size": 116,
+      "sha256": "b7164ee36ccb0a08bc27c7e381ea417c97d8c3fd3157de62b75d2a6bf7a0a589",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/syscall.h",
+      "size": 769,
+      "sha256": "5d61708a0c8e8e7bcbd6e3e209ed848abbef2681ecce109d4aa780e6f1b8803f",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/syslimits.h",
+      "size": 3211,
+      "sha256": "46bf581e256a121c62211ebdfcbd17feac1368c6e28052969ef81ce77472238f",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/time.h",
+      "size": 11688,
+      "sha256": "5257d1a6dcc76341939fae314e53081ffa5e517439e2645a959997709b3f926e",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/timeb.h",
+      "size": 800,
+      "sha256": "208f4cf1df8d97e68b4a73c962ff3b0c5e0771bee39321dfaf7541b64dfa616e",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/times.h",
+      "size": 663,
+      "sha256": "dd5923ee90003492936ee8dcbc996c74246594a459062fb707b4fe17563e05d8",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/timespec.h",
+      "size": 2411,
+      "sha256": "c2c2dfdcf9deacccb8919ff633f212afa455e4779a2d12c47b9afa0eff7d73c1",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/tree.h",
+      "size": 27563,
+      "sha256": "b0f29426e0ac0090382f9a90f6f1ca990ac60377f481d3dbdba1d26a1944d0f5",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/types.h",
+      "size": 5467,
+      "sha256": "0a9beb981196c25b1992ed65eb25c909d6de4047c498392ee24da069e93abf40",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/unistd.h",
+      "size": 22488,
+      "sha256": "a294d0aa83054482a3bced1125fd783ad352c894f569623da2f0d23a530073c9",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/utime.h",
+      "size": 363,
+      "sha256": "2bcd7d80d018eb7ef8912394fa6c84da8a2212fba9561db9e0b03d9ee8e40d34",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/sys/wait.h",
+      "size": 989,
+      "sha256": "6f6974c77254b5f17fa67af13cc609b721bc70a4c32573c404a6fb8b2d5834fc",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/tar.h",
+      "size": 1389,
+      "sha256": "66008622fce9fe0b5c305e52bebc1dbc3291a5531682d886d575d4c4976f069a",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/termios.h",
+      "size": 92,
+      "sha256": "fc13c1c649a2530491bed09e072743a931822b0faa826efb34e98bafd7373fa8",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/tgmath.h",
+      "size": 8156,
+      "sha256": "4cee5f66824b507890fa22a0462ce46d177ca14345280e01d7bee660e01d42c9",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/threads.h",
+      "size": 3040,
+      "sha256": "7b12eae65db429bc21f7f9480e43b09ecec8e09a14ef17b7a6c3b86739459354",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/time.h",
+      "size": 7846,
+      "sha256": "32dec98852456877da25c1e7a56f2d6f30f2b0501d2fe499da30c5f9335118cf",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/unctrl.h",
+      "size": 2175,
+      "sha256": "42594bb0f4525b451139feebd38f6d25812974fb00decab791acc421ce7b08d0",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/unistd.h",
+      "size": 89,
+      "sha256": "19f31553182c4d649dd0d6301ffdbb5b4d7903b28373dd070a553798b41f524f",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/utime.h",
+      "size": 185,
+      "sha256": "be672799c1b20fc35446ee2bf6b3c800677f2168983a1c99b366cf8036dbc418",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/utmp.h",
+      "size": 90,
+      "sha256": "0cf902b1dcfa51852a3127a012ef4e77182510b0c5c89dab89d522656366e237",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/wchar.h",
+      "size": 11994,
+      "sha256": "cdfe4b9e2d1bbad86f8410a7497a5638909c41ebace763cdb1a68cb33a50e435",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/wctype.h",
+      "size": 1770,
+      "sha256": "afdf3415c9a74cfbbc8942d83e25f277528e6638ccd2b18c1239c6d61c579930",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "Compiler/WINDOWS/sh-elf/include/wordexp.h",
+      "size": 1526,
+      "sha256": "cb95592bd02595459a64ce2caab45c67564fa67b0110164aa00e38747b1448ee",
+      "category": "compiler_header",
+      "purpose": "Cabecera de C/newlib del entorno de compilación heredado; conserva su aviso original."
+    },
+    {
+      "path": "art/authored_index.h",
+      "size": 17855,
+      "sha256": "4433758f6bdbea426524775ae5b5f924775ba659609cd6b0412e09061cdee706",
+      "category": "generated_data",
+      "purpose": "Índices, dimensiones y tamaños del atlas de sprites usado por renderer.c."
+    },
+    {
+      "path": "art/r10_r10/gameplay/gameplay_native.h",
+      "size": 27341,
+      "sha256": "7bd7543c07e50fa24aa7f4d554fddcd4468a7ca567077dffe9b9d0ce99395197",
+      "category": "generated_data",
+      "purpose": "Píxeles y paletas de terreno e ítems compilados en el ejecutable."
+    },
+    {
+      "path": "art/r10_r10/presentation/start_prompt.h",
+      "size": 3256,
+      "sha256": "b447dd6a1583928b021ae89de2cbb2ce96bc6f9f85f57594ce8436293a02a5ff",
+      "category": "generated_data",
+      "purpose": "Píxeles del aviso de inicio compilado en el ejecutable."
+    },
+    {
+      "path": "art/r10_r14/presentation/pause_prompt.h",
+      "size": 3102,
+      "sha256": "04cfa1dbca56cc9a88a3e996285b033ef1eb5abc996d8ea2c44e9255a283e7d9",
+      "category": "generated_data",
+      "purpose": "Píxeles del aviso de pausa compilado en el ejecutable."
+    },
+    {
+      "path": "audio/catalog.h",
+      "size": 7669,
+      "sha256": "b501aceff9e2a3074192745989e123bfa81f7a07515998acae03f707b3b45447",
+      "category": "generated_data",
+      "purpose": "Catálogo de comandos, muestras, formatos y puntos de bucle de audio."
+    },
+    {
+      "path": "cd/ART/AUTH4.BIN",
+      "size": 101632,
+      "sha256": "d50470309524982fb4a6ae5df062770ba2715db67865f7e0c466296e237eb922",
+      "category": "runtime_art",
+      "purpose": "Recurso gráfico que el ejecutable lee desde el directorio ART del disco."
+    },
+    {
+      "path": "cd/ART/CELLH4.BIN",
+      "size": 167936,
+      "sha256": "5c278abd6fe890018274213438c6f2217471c4d5500c9517ee4ee1e1ac9b216b",
+      "category": "runtime_art",
+      "purpose": "Recurso gráfico que el ejecutable lee desde el directorio ART del disco."
+    },
+    {
+      "path": "cd/ART/CELLT4.BIN",
+      "size": 67584,
+      "sha256": "7bdbbdeb57e9ae3792acb3f861e3de11b29148fda21e7a2b7dda49b08f92393b",
+      "category": "runtime_art",
+      "purpose": "Recurso gráfico que el ejecutable lee desde el directorio ART del disco."
+    },
+    {
+      "path": "cd/ART/CHARDF.BIN",
+      "size": 230159,
+      "sha256": "4948eca50e3549f49a69fe4ad4148c46940e78fe4eaf74361cf3e26924a9b257",
+      "category": "runtime_art",
+      "purpose": "Recurso gráfico que el ejecutable lee desde el directorio ART del disco."
+    },
+    {
+      "path": "cd/ART/CHARMDF.BIN",
+      "size": 32776,
+      "sha256": "b06e0f72c33e710f5d32e9f4ff94b3744a7a7cbf313386a581641aaea33cda31",
+      "category": "runtime_art",
+      "purpose": "Recurso gráfico que el ejecutable lee desde el directorio ART del disco."
+    },
+    {
+      "path": "cd/ART/VIEWX.BIN",
+      "size": 1280,
+      "sha256": "1e458380214421b3c71b2f4d3354674ea68e1386c5bcba42fd5b2d4c1ccb8763",
+      "category": "runtime_art",
+      "purpose": "Recurso gráfico que el ejecutable lee desde el directorio ART del disco."
+    },
+    {
+      "path": "cd/ART/VIEWY.BIN",
+      "size": 480,
+      "sha256": "df23f42038dc3263b895cb4aeb3061db3f89b27b9585edc40c4e9bc5cee292ab",
+      "category": "runtime_art",
+      "purpose": "Recurso gráfico que el ejecutable lee desde el directorio ART del disco."
+    },
+    {
+      "path": "cd/AUDIO/F00.PCM",
+      "size": 14944,
+      "sha256": "c7254af17c25eca699d39ad00f5675c65cc92b47e30f161bc7e6272b474b6c41",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F02.PCM",
+      "size": 33376,
+      "sha256": "1539b0e01332d9d81dbd84c3bb1f551a597854e34c6c13fabf283298b2f2f9da",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F03.PCM",
+      "size": 43744,
+      "sha256": "e32785f5c68132789914b998be9946c4df3e90f2263a38fc3719a74e3709defa",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F04.PCM",
+      "size": 8512,
+      "sha256": "ff72065f4be57247b5687c934f34f5f4952eae4a5bfc3daf779b573311eeff15",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F06.PCM",
+      "size": 24896,
+      "sha256": "134853ec2df907e91609c93e7143689311cc9553a4fe421e8250a7cc5dea7f07",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F07.PCM",
+      "size": 59584,
+      "sha256": "d14a8f8142f22aa2616d9c57fdff71510b0e90ab97af3993adca1d05432b3156",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F08.PCM",
+      "size": 58368,
+      "sha256": "3f124a70098da0f9606e6c51d0020319f0abd66679b7d0baccf6a50dc58a27ba",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F09.PCM",
+      "size": 16160,
+      "sha256": "0f660a1a07c87aca0bd5cbc12e60a62cfd8cae2bf1340ee0c9854aa7730f7d7b",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F11.PCM",
+      "size": 44960,
+      "sha256": "8c72984164ec3bfc193288bf63115f75df317af3eb7d3763057a2b4e70560af7",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F12.PCM",
+      "size": 13600,
+      "sha256": "38e7b4189debc03ef19ad4591d07ae3f73e67e84cb8c2bc17f909d27915a6ea4",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F13.PCM",
+      "size": 40288,
+      "sha256": "59b86f090a4109f26ea3865a4d274e221fd2f6ceb96cd2927351b4ea7c0b09f0",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F14.PCM",
+      "size": 17792,
+      "sha256": "2a978c4b1c5c11ad17815c65b7887819bb27d72c44bc92b336fd78acd456a4d2",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F17.PCM",
+      "size": 48608,
+      "sha256": "89dd4de0853621748ec53828de853d9aa29b360e0129f66f3d84feb8ef80ffec",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F18.PCM",
+      "size": 20832,
+      "sha256": "511f3346e1aa6f0fc86c4c245cb57fb3a422a7e4fd9aeff9530c6d8628479e33",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F19.PCM",
+      "size": 93728,
+      "sha256": "d0660942c2dc429d8fee3421e9e9e5ccc4cb7a8c26085ee77b15ccb1b90545cc",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F25.PCM",
+      "size": 50240,
+      "sha256": "ab2206d9737bfa2bc1046fdbb0b8c0b8b9e6c36fa5d542845a1a83d15147874d",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F26.PCM",
+      "size": 31552,
+      "sha256": "d73a3edc4b3f01fb80ed94b84fbd9df5226f7aa8e8c50dfbcac725846580137a",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F29.PCM",
+      "size": 48000,
+      "sha256": "963883cd70f064207b470a43854ce03cce0f6e5b1bbafcf6e11e5580397c70c5",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/F30.PCM",
+      "size": 59456,
+      "sha256": "a064cb2ab270b16353c0202c09c29d5a2b4c22632bd7bbad760de54439b9cf53",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M033.WAV",
+      "size": 6545152,
+      "sha256": "abab9cfaa4951ff2ed170007237a70b43bf3042688ce4c49238d2cf8ee40492c",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M034.WAV",
+      "size": 5605090,
+      "sha256": "d981974b40b0dd6e24fa9a2ac50fd9bd01b1cf69a6aeeb849f80b13bb23f9f01",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M035.WAV",
+      "size": 45037034,
+      "sha256": "94f766357431a2a13725f6943b464792c5a6a6b13d1b8e3bf4b3a73c91049af6",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M036.WAV",
+      "size": 6090482,
+      "sha256": "7194c3f7c80800f7a1217611263a02d88f1f40a36efa89b9d73b4a51817c91ce",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M037.WAV",
+      "size": 9560420,
+      "sha256": "10a0cca72ab92e5ee44d8855481ab0a11e85500a55b506003e92cb2390163d71",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M038.WAV",
+      "size": 6459134,
+      "sha256": "4afdb90e100a328f901c7d9c792b7a6dd12ee1eb2f4191f259326e3220c3f8ba",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M039.WAV",
+      "size": 5015246,
+      "sha256": "92ff000859f660852a47f77311c2c1a73b41336fa6a52a5ea9d6898acf2ba431",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M040.WAV",
+      "size": 4886218,
+      "sha256": "92aac323c7da2ed3b558eb9b8c661d3514265ac34de8073a3974cd13da0f80d5",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M041.WAV",
+      "size": 16481862,
+      "sha256": "cb8855129a1bc0938f669320996e1ce63dbca5941b2d145ead4c35177cbe228d",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M042.WAV",
+      "size": 7308570,
+      "sha256": "4482ecb31ad78a821df1e38446ddbd5f98c00539d0992636fdc7f3a3c614c4a1",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M043.WAV",
+      "size": 5545184,
+      "sha256": "daeba14b1cd2ab39880a35accde322316c29f55f19613ac27c50d2adc65a26bf",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M044.WAV",
+      "size": 12661704,
+      "sha256": "40a3e5adf828539cff2a6817eff85bc6358190ee0b2dd027c3c1dc46b15f138e",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M045.WAV",
+      "size": 7909166,
+      "sha256": "1b8334ae805a404edc1271d84d93446334e6ef5f869b5355104a67fb2bd65ad7",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M046.WAV",
+      "size": 7276312,
+      "sha256": "8ed7a2a05362d17b3d7beafcb7cb66a61c389e2dd0bcaea564996930b04b2a9b",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M047.WAV",
+      "size": 5872362,
+      "sha256": "cdacf0aa714f70b75db652680b941d5ca0beb956a2706447a8b39ec7df5f8036",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M048.WAV",
+      "size": 9230168,
+      "sha256": "51dcb1f0a290dbbc8024245cc28c4f6159c0c66cce748a27aa3a1fc7d3a0a804",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M049.WAV",
+      "size": 1393052,
+      "sha256": "090d045dd02e697c346740124e614bab468da1c3c248d091f217683ded14ff99",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M050.WAV",
+      "size": 411180,
+      "sha256": "d99130cfc180fe8a5fab34e78046a005043496b7e2e8c425f0b7e96cc9cddbce",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M051.WAV",
+      "size": 8830796,
+      "sha256": "415edef8d32312196a0bac1c488a51438ae55c8f8db03dd2576189e5fe9559b9",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M052.WAV",
+      "size": 4367034,
+      "sha256": "25265e90f57a2d4977f5c2a05c6c55defbaa4c39a9d2b0ac271a8d0427d4c108",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M053.WAV",
+      "size": 248240,
+      "sha256": "ab3db019a1013e49163a2ecb986dbb075fcb4ae0b9fe722b03e7c13c04920fb9",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M054.WAV",
+      "size": 517504,
+      "sha256": "957cb8925909571cd4442cde23862f9cd5991df57b3c963f27a1be418f15aa4e",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M055.WAV",
+      "size": 1546846,
+      "sha256": "8eb7365a0cf7413834818eaed9b6c8e174cd65f8857a5383083af86a6ede0afc",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M056.WAV",
+      "size": 9279322,
+      "sha256": "76a46d4b807f42b639fb6acc4478ae826bcb8e54239bc2112e8ea8bd68f3f0f9",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M057.WAV",
+      "size": 5873898,
+      "sha256": "0c25f18de8e3656f3170c71778574294f9c0006a860e38e228e741306bdacd6b",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/M059.WAV",
+      "size": 993908,
+      "sha256": "086355b6a06a6d859f4e4a69940b2d19a1681797272e0813aabcae5bfda5682c",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/O0C.PCM",
+      "size": 49632,
+      "sha256": "8ccc3ae7a1302c27e11e413adb3c7eeac556a081fa3bc0cc8c398ab21c833d1d",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/O11.PCM",
+      "size": 31776,
+      "sha256": "ccb323a2a4525f5d020e9c61a1dc3d54e9ccc6cfdb0504b99c288476356cf5c8",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/O12.PCM",
+      "size": 4960,
+      "sha256": "a3654fa49ece3bb6122a88c7890702f6ab3a680f147d049588d7276155a6347a",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/O14.PCM",
+      "size": 15904,
+      "sha256": "58d82726a43287b8c71b931db44488d4c3b06aba8c479098ef3f217d1967c32b",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/O17.PCM",
+      "size": 16416,
+      "sha256": "6655adcd48679dc03fe0d4c275b8ddfc3bd8070d354daa2fea290d0e3c85138a",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/O19.PCM",
+      "size": 18144,
+      "sha256": "79b33e8e58b97370166730b33c116a367b2026562d4279738df5892ddcd8074a",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/O1A.PCM",
+      "size": 6624,
+      "sha256": "f05201743510b05e4e7438926d4ae15fa070ed3ff018b33e4f991b366811b0df",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "cd/AUDIO/O1C.PCM",
+      "size": 11872,
+      "sha256": "e8a011aa7723942a8a43d797298ff49c74cedb6f6d39a6a2e844979d612f3f98",
+      "category": "runtime_audio",
+      "purpose": "Música o efecto de audio leído desde el directorio AUDIO del disco."
+    },
+    {
+      "path": "frontend/data.c",
+      "size": 166909,
+      "sha256": "3ee565185d6bfc5f23cb73790a862f12b578bba2005add071e40deba55ae2338",
+      "category": "generated_data",
+      "purpose": "Bancos de datos y paletas de la máquina recreativa usados por la interfaz."
+    },
+    {
+      "path": "frontend/layout_data.h",
+      "size": 7127,
+      "sha256": "8803844ada4bcf0ae4e3e8a2e51f270370cedc15a8be487f2c2c79a6537b4e3d",
+      "category": "generated_data",
+      "purpose": "Posiciones y códigos de glifos de los textos de interfaz."
+    },
+    {
+      "path": "frontend/title_native_data.h",
+      "size": 55784,
+      "sha256": "77be7f329de5e57f781a7e154ba720d882f5242af0b1d64bf453aeed59e12615",
+      "category": "generated_data",
+      "purpose": "Píxeles y metadatos del título adaptado de Mega Pang v0.3."
+    },
+    {
+      "path": "stage/spang_collision_tables.inc",
+      "size": 1843,
+      "sha256": "390e78c7eb8966a1363325ed07b8d5a51dbb644bcab89402f2e34c3e0385d83b",
+      "category": "generated_data",
+      "purpose": "Perfiles de colisión extraídos de la vista DATA de World 900914."
+    },
+    {
+      "path": "stage/spang_panic_video_data.h",
+      "size": 8488,
+      "sha256": "a1439f0ed915ae8114e3bfda4ee334608774d13c9e27f5f89112e329f5dc5d30",
+      "category": "generated_data",
+      "purpose": "Constantes de la ROM original para el marcador y las paletas de Panic."
+    },
+    {
+      "path": "stage/stage_data.c",
+      "size": 1276404,
+      "sha256": "aad4bc2a6adf29eb4c375270bb42a6175039f04815e7c7e33e5308d746f12b22",
+      "category": "generated_data",
+      "purpose": "Bancos originales, tablas, paletas y escenas comprimidas de los niveles."
+    }
+  ]
+}

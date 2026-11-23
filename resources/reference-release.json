@@ -1,0 +1,30 @@
+{
+  "release": "SuperPang 1.4",
+  "publication_date": "2026-11-23",
+  "reference_source_archive": {
+    "filename": "SuperPang_1.4_FUENTES.zip",
+    "bytes": 185292771,
+    "sha256": "aec07b4b6b3ffb6fc95365e1ebd96c3707bc5d30945a3b283fd4f881a8da8f9e"
+  },
+  "reference_output": {
+    "elf": {
+      "bytes": 617584,
+      "sha256": "e4fe164fa1d90843a834533d76a9c9d14700d69ad523d1cdb8b0340d982b1683"
+    },
+    "raw_executable": {
+      "bytes": 554960,
+      "sha256": "cce6b48eae25c755c238ded62dcbf02d17550737b718f30e6c1f67c1dba433b1"
+    },
+    "disc_archive_manifest": {
+      "SuperPang 1.4.bin": "60b99dffaaa95b1304bbb1c2c6b910ebc8b407c12eb7dbeb3b4778a112712d15",
+      "SuperPang 1.4.cue": "aae09799d81cdd883dd4b006f11fca3c40a8a811eeeb4e26a8aee112bdabb379",
+      "LEEME_SuperPang_1.4.txt": "00b1cc5ed87d88a93432c52c01b6453b7fd9337874834d62afc8457157c30109"
+    }
+  },
+  "hardware_validation": {
+    "date": "2026-11-23",
+    "source": "Project maintainer report: SuperPang 1.4 works on real Sega Saturn.",
+    "scope": "General functionality confirmation; full route/peripheral/long-session coverage not specified."
+  },
+  "public_build_scope": "Recompile with verified local prepared resources. Full regeneration from arcade ROM alone is not available."
+}

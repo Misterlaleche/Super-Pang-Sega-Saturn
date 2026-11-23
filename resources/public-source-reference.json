@@ -1,0 +1,1471 @@
+{
+  "release": "SuperPang 1.4",
+  "scope": "Original source files selected for this repository; game sources unchanged from supplied 1.4 archive. Repository tooling and documentation are additional.",
+  "files": [
+    {
+      "path": "Compiler/COMMON/JoEngineCueMaker.c",
+      "sha256": "2f91bee4d574d0e0526e30132bb56d9a70900406b83d4d36a01b11fb411a4436",
+      "bytes": 10362
+    },
+    {
+      "path": "Compiler/COMMON/JoEngineIsoToBin.c",
+      "sha256": "51eb9938f9545cfb2e04936e6dd06b44dbde543dd95c74898564a30226ac6f24",
+      "bytes": 19762
+    },
+    {
+      "path": "Compiler/COMMON/ip.S",
+      "sha256": "7c3ed2e38c699028534bbd275cbaf24104ab06da96df1258c14123d79c133f66",
+      "bytes": 1615
+    },
+    {
+      "path": "Compiler/COMMON/jo.linker",
+      "sha256": "75936bcce8df53f67b5f35bde5eb0cefc64481d760562815785749b3e18f9155",
+      "bytes": 1614
+    },
+    {
+      "path": "Compiler/COMMON/jo_engine_makefile",
+      "sha256": "16200f0b6db9257b7d6b0b2ea5a8080e29b3a76c88000176dcade10610b34629",
+      "bytes": 19502
+    },
+    {
+      "path": "Compiler/COMMON/jo_lz.py",
+      "sha256": "717bb1dce6d869ea8b3ba4f031ad73d661bf62889e8cc2384a2f93fe07379592",
+      "bytes": 3129
+    },
+    {
+      "path": "JO_ENGINE_LICENSE.txt",
+      "sha256": "4e9dc14612ed9d8cce4b41d70715629f9df05a88c6982a58c990311460778588",
+      "bytes": 1075
+    },
+    {
+      "path": "JO_ENGINE_SOURCE_NOTICE.txt",
+      "sha256": "75ff4cec313b5210d3faa2990834db4879836cacb9111f5e7ac9ed1d80399ee0",
+      "bytes": 2893
+    },
+    {
+      "path": "art/build_art.py",
+      "sha256": "0d6b7591ea09c99c7183ac7032c3af9b36b7e483d7476134003ce217576a906b",
+      "bytes": 24662
+    },
+    {
+      "path": "art/build_r03_assets.py",
+      "sha256": "7631451c7132a6847bc39a128911634822dfcb0ddab72f061d87fd9a32c8e7f5",
+      "bytes": 25567
+    },
+    {
+      "path": "art/build_r04_assets.py",
+      "sha256": "5aa0653d7e95a61c67df601cf42196cdbdd96fd2490a88e5c68b4613924cd59c",
+      "bytes": 24013
+    },
+    {
+      "path": "art/build_r06_assets.py",
+      "sha256": "74a4557da160160bf662fbc3a54f2c7c5286ccb98c5513d9d1a83ef843b2c0df",
+      "bytes": 10444
+    },
+    {
+      "path": "art/build_r07_assets.py",
+      "sha256": "4187cbd6df51ff50360936db75bb4b9b475260c793826512e4aa17251f9f9435",
+      "bytes": 21259
+    },
+    {
+      "path": "art/build_r08_assets.py",
+      "sha256": "75febe64074fe533c444ed50915bf2a06df2ce4dca788ae40c08dcfc0e4315eb",
+      "bytes": 20210
+    },
+    {
+      "path": "art/build_r09_assets.py",
+      "sha256": "e958aca1332ef6c544f156f7c13c1a4b0782ccec1c007020c7cf608840c9e935",
+      "bytes": 24079
+    },
+    {
+      "path": "art/build_r10_frontend.py",
+      "sha256": "c5147df335a1562deb721dc4ea1e31aa7359f93420acc510f137f88e76c5fd54",
+      "bytes": 15110
+    },
+    {
+      "path": "art/build_r10_panic_video.py",
+      "sha256": "8708f140ce607db3599cbe6d63f1a44ae4d5ca04e1f1b11864803afed3dae902",
+      "bytes": 2595
+    },
+    {
+      "path": "art/frontend/megadrive_03/build_title.py",
+      "sha256": "c41d20cc16ee8e1cbc0d84989ae26ac04f8fbdf2a001caac138497b8b3bac981",
+      "bytes": 8764
+    },
+    {
+      "path": "art/frontend/r10_r10/build_title.py",
+      "sha256": "1bcdca9db78bdd366f9e2ef9ce973be711ae0389cc8326eb524b4a71fe7e8ac4",
+      "bytes": 8723
+    },
+    {
+      "path": "art/r10_r10/build_start_prompt.py",
+      "sha256": "30ebed21ee7e4746020a0a0f17fa1603a19d099ab102fa6a99c14c37e9809489",
+      "bytes": 2066
+    },
+    {
+      "path": "art/r10_r10/gameplay/build_native.py",
+      "sha256": "9817b974a78f9214636a02bc424ca8df5b711936c0389abf6e2853d5f3979b47",
+      "bytes": 3416
+    },
+    {
+      "path": "art/r10_r14/presentation/build_pause_prompt.py",
+      "sha256": "baa5e9d9d56954746e235cd65a8e95583b5147aa406e7ebfaeb7f9f1378c4fd3",
+      "bytes": 1954
+    },
+    {
+      "path": "art/r10_r4/glyph_inflate.h",
+      "sha256": "ac8b10c3b0fbc33d12915ed9f643b500a5e289be92f4b3ac25ac944a80f2d455",
+      "bytes": 16272
+    },
+    {
+      "path": "audio/audio.c",
+      "sha256": "7979fadd4f5be55ae7e0db1ae57c5973925774f89a39887de1b1451c06f2518a",
+      "bytes": 19324
+    },
+    {
+      "path": "audio/audio.h",
+      "sha256": "42f05c534d6cf4a316e55f9a37164c497479005cb4c0336c1880c289b77cf17f",
+      "bytes": 4603
+    },
+    {
+      "path": "audio/build_assets.py",
+      "sha256": "390ecd60de1bc8b9aa0f82022f1c6d7b51a7c4749fff98c15c5f3aa2c5c2c1b1",
+      "bytes": 18251
+    },
+    {
+      "path": "audio/decoder_bridge.c",
+      "sha256": "76c49fc579e58e05613383287532190c60acde6efb741b6da0fad6d79a8f9fba",
+      "bytes": 683
+    },
+    {
+      "path": "audio/r10/export_original.py",
+      "sha256": "91e99cd74f692f18232d322803b98d02e59537bdfc5ddccabaa1897eec7a6d61",
+      "bytes": 10359
+    },
+    {
+      "path": "audio/r10_r4/export_original.py",
+      "sha256": "01503ce10342edd134ab661f7afa4bcfbc9f46ee4bcd23e960e43ce732bb06f5",
+      "bytes": 4932
+    },
+    {
+      "path": "audio/r10_r5/build_machinegun.py",
+      "sha256": "5e3701afcbce4b20308a857b726ddd7e7d92a2fb6f8edd30e4d085fccc59ca86",
+      "bytes": 9171
+    },
+    {
+      "path": "audio/vendor/MAME-OKI-BSD-3-Clause.txt",
+      "sha256": "f29af223aca95506603d1e431a8241ca460cc4db110e85a25fdee272756c571f",
+      "bytes": 1772
+    },
+    {
+      "path": "audio/vendor/audio_c13_codec.h",
+      "sha256": "432d44c874a8531d4dda2b5c904b404998c9fc635ada820c67ef722a8d9836ea",
+      "bytes": 2587
+    },
+    {
+      "path": "audio/vendor/c13_encode.c",
+      "sha256": "134778c10be3144187d106686258c741d048e33c56c5078414c4feb792ca95eb",
+      "bytes": 1337
+    },
+    {
+      "path": "audio/vendor/spang_oki_adpcm.c",
+      "sha256": "028109f74096982884965f689710c52a9830269c486bd24c581b85a4cf10d7b2",
+      "bytes": 1601
+    },
+    {
+      "path": "audio/vendor/spang_oki_adpcm.h",
+      "sha256": "d1b69e339d853741a60cbf65121f7c20ed9f1ebfead5833f38243dc1f43636da",
+      "bytes": 991
+    },
+    {
+      "path": "audio/vendor/spang_rice.c",
+      "sha256": "cff3e0c8dd7e7a899eabb3b0fbb2170c65b78c4ee4b64cf7d12f94e5cf55431f",
+      "bytes": 3340
+    },
+    {
+      "path": "audio/vendor/spang_rice.h",
+      "sha256": "4190f31ac5b69d279ef33d9eb5ddedd4ca3a4bb1ae16b42bbe46b24de8091a96",
+      "bytes": 1499
+    },
+    {
+      "path": "boot_diag.c",
+      "sha256": "e85ddce0fff28941c0c0bb1abaf40cacc6c8c608f773ab5b60a044dc07fd74e3",
+      "bytes": 2255
+    },
+    {
+      "path": "build.sh",
+      "sha256": "ef84f0b132c323878c0be55e3e0b5a40601a51de0f3ed7972a43ccd0bee06a95",
+      "bytes": 420
+    },
+    {
+      "path": "cd/ABS.TXT",
+      "sha256": "adaf64e6fdeedea7e16d249c5a9c6ef07ade7f33e454ba3b74fbdb1d2a6de1fa",
+      "bytes": 234
+    },
+    {
+      "path": "cd/BIB.TXT",
+      "sha256": "290ed0662a56826234080f5c6a71c244975bd44951fc230fb0e0ce7aea9c49f0",
+      "bytes": 84
+    },
+    {
+      "path": "cd/CPY.TXT",
+      "sha256": "691aa3ab16a0693126eaf53a87247a606702b62b8027c3051cbf0484962a6a50",
+      "bytes": 162
+    },
+    {
+      "path": "cd/JOLIC.TXT",
+      "sha256": "4e9dc14612ed9d8cce4b41d70715629f9df05a88c6982a58c990311460778588",
+      "bytes": 1075
+    },
+    {
+      "path": "cd/JOSRC.TXT",
+      "sha256": "aadf10d1bfed90f28ab95ed670f69a41d0264c90b8da7e8d1d12edaff4b90916",
+      "bytes": 2195
+    },
+    {
+      "path": "frontend/core.c",
+      "sha256": "5f92e6013f7d974e905b500bbe56ed606b1b1cdf4c4326917f3776306dea4dc3",
+      "bytes": 27449
+    },
+    {
+      "path": "frontend/core.h",
+      "sha256": "65934a61e67c4e8e3f2252d3a79cdb3aeecd14e76cca512e8153debb2f838f81",
+      "bytes": 3509
+    },
+    {
+      "path": "frontend/data.h",
+      "sha256": "1193a0e42d5c7301caaa26cfd5098e777c2db3646cd6d0ca39c9f7321337641f",
+      "bytes": 290
+    },
+    {
+      "path": "frontend/frontend.c",
+      "sha256": "5e21450f3c0641e761eb0855d0745c318eeba4c6873e47ce5fa59f865ab374f6",
+      "bytes": 28967
+    },
+    {
+      "path": "frontend/frontend.h",
+      "sha256": "17b6dbe4279d1f694a42a40b991a0b68c5c6707de2fdc193f8ab8d11fbbbeea3",
+      "bytes": 3983
+    },
+    {
+      "path": "frontend/layout.c",
+      "sha256": "284607ffed32640d8042cf98a0d3720ae8b5578f264d04fbe26250948390dffe",
+      "bytes": 5153
+    },
+    {
+      "path": "frontend/layout.h",
+      "sha256": "b3f8747e32ffd776d0328b2421e65b078bbf55f2434ab0e79ea75f2696d419a6",
+      "bytes": 1938
+    },
+    {
+      "path": "frontend/records.c",
+      "sha256": "b1c1f7d631283d7f6c0c1b831fdf19382cdc6e511a236f95049d257ce107c7ea",
+      "bytes": 4825
+    },
+    {
+      "path": "frontend/records.h",
+      "sha256": "ebb2bc924b3fbcf45f5e7f10cf69e64a685813d29dea3ae0cc5d4c63c7d3aaa1",
+      "bytes": 1199
+    },
+    {
+      "path": "frontend/save_codec.c",
+      "sha256": "e3e5361a865394c5194ee141a4281acb2a93aa3a84023de78b1d78b1a52b4797",
+      "bytes": 1278
+    },
+    {
+      "path": "frontend/save_codec.h",
+      "sha256": "74e6ea98aece9e2f7f14dff6416e3027541234c6041fb6e0cb545401d2080061",
+      "bytes": 418
+    },
+    {
+      "path": "frontend/settings.c",
+      "sha256": "1735b3318215732f9ffdd289fad059ef13b910ddafec24deb4842252ddea7e71",
+      "bytes": 1516
+    },
+    {
+      "path": "frontend/settings.h",
+      "sha256": "dc027fffdf5d66c933a9bec48751318df6d91aca6433504a927107c6b1dd29ae",
+      "bytes": 572
+    },
+    {
+      "path": "frontend/title_native.c",
+      "sha256": "3127d4ad59eb2c3c9034509a5d309dd730454034cf90d2710fdae8d8c1b475aa",
+      "bytes": 2863
+    },
+    {
+      "path": "frontend/title_native.h",
+      "sha256": "842693956128b0765dad32c7923f13e65445509a4b601aec2cb5502f3e559631",
+      "bytes": 1222
+    },
+    {
+      "path": "hardware_diag.c",
+      "sha256": "d8c1f27c9abcd18cd6cfff256b3461248bd709a18906db4278d4e6539aeeff35",
+      "bytes": 13682
+    },
+    {
+      "path": "include/boot_diag.h",
+      "sha256": "bbc56c111dd7b6ee056ef7a2747216979e0dcc9d9796386e6481f14fb1f0cc17",
+      "bytes": 209
+    },
+    {
+      "path": "include/hardware_diag.h",
+      "sha256": "a97e4dd18035d04350cc0c1c1ea16c7ea5a55be262c2d2a575feb52d0c72e670",
+      "bytes": 2198
+    },
+    {
+      "path": "include/render_common.h",
+      "sha256": "46b81be3f438ca929b1ff5bcd82254e6dbcc1ca613a1e44b368cfc9fb7e8d6e6",
+      "bytes": 4906
+    },
+    {
+      "path": "include/runtime.h",
+      "sha256": "56d2038154db27c66ec613b1a1a2863ac92072f35c7b7439e9695301bdb06ce3",
+      "bytes": 1220
+    },
+    {
+      "path": "include/savegame.h",
+      "sha256": "ffa93cfb3a9d6425617501988597d17d039e9d7c14d450495e2695cf101f0c84",
+      "bytes": 376
+    },
+    {
+      "path": "include/stack_usage.h",
+      "sha256": "47c13765658144f83a5a554ba231bc95d4d5ef1d220dbb35743bd2ce412af03b",
+      "bytes": 301
+    },
+    {
+      "path": "jo_engine/3d.c",
+      "sha256": "f9939349ec46d37d026f57f2b5aefd6bccb1dbfe2f1941442ba02eff61feed94",
+      "bytes": 429310
+    },
+    {
+      "path": "jo_engine/audio.c",
+      "sha256": "7f04b08b8947592cc44e7e9efea2d79cdbd7ad9490b310c414f7bda23ce4ff4c",
+      "bytes": 120935
+    },
+    {
+      "path": "jo_engine/audio_driver_68k.h",
+      "sha256": "54b1ce4ca07c2c59e5bfe4370bc74d3c5dafed8a518cc92edeae6c54b14529e6",
+      "bytes": 6306
+    },
+    {
+      "path": "jo_engine/backup.c",
+      "sha256": "34140fdf70f075bf42db1be316e5556f979054292de3e796fa8980c4875fafab",
+      "bytes": 33419
+    },
+    {
+      "path": "jo_engine/cell.c",
+      "sha256": "6c5e9beef9b41ea1f849a78c8fcecc79be13c5bce50c122e56cad946a1a85f31",
+      "bytes": 105549
+    },
+    {
+      "path": "jo_engine/console.c",
+      "sha256": "dbe7dbb84f45a15e21e4a172de4fa729be5accac684d13cfab190f321c2b6789",
+      "bytes": 11646
+    },
+    {
+      "path": "jo_engine/console_builtins.c",
+      "sha256": "eb0b9bf4b722fa6c6490c6b42973a253f5614d22c12801065951590edd4a412a",
+      "bytes": 8167
+    },
+    {
+      "path": "jo_engine/core.c",
+      "sha256": "f371a74425f1684debc46c7f38dc66a38a9f52fea8fd2bd530bea0b02c67625e",
+      "bytes": 38397
+    },
+    {
+      "path": "jo_engine/dsp.c",
+      "sha256": "f3a9f314df5ee258be6c59e7f48ade704d582feab14fc6f86b76890d5879e001",
+      "bytes": 2865
+    },
+    {
+      "path": "jo_engine/dsp_xform.h",
+      "sha256": "122faca98709e2056e82d258690e415d599d4e08db0415a9ad5af92fcce9945d",
+      "bytes": 726
+    },
+    {
+      "path": "jo_engine/effects.c",
+      "sha256": "d8e26b5f9259cd2bb0316580da678163e3aa110b5112599811796572782a1e2c",
+      "bytes": 15392
+    },
+    {
+      "path": "jo_engine/entity.c",
+      "sha256": "056915533a014f474bf00138e63403235e543efc772670118dfac2575341e8eb",
+      "bytes": 89234
+    },
+    {
+      "path": "jo_engine/font.c",
+      "sha256": "8775a2136bf2fea2d35cc94a58046eaa7755fa03c6b0b459cea34e67677360d9",
+      "bytes": 8560
+    },
+    {
+      "path": "jo_engine/fs.c",
+      "sha256": "4848ad05f28d16c29c93ed1dfbc15791d86bd3130c268b8a8eb9e195ca1f0303",
+      "bytes": 83213
+    },
+    {
+      "path": "jo_engine/glow.c",
+      "sha256": "547f9addc7979bc19ec7bacace2359fe133d9f98341f45a3464d01e155c45509",
+      "bytes": 33353
+    },
+    {
+      "path": "jo_engine/image.c",
+      "sha256": "8f7947b733f9100b5b581f9a364d11905cd5db07fb8b4234059e47e2e34bf1e8",
+      "bytes": 13577
+    },
+    {
+      "path": "jo_engine/input.c",
+      "sha256": "cb76d5b67610b933f7fe4724218c96bee2f6672f5059f5a4be7d54e01ab8b3ec",
+      "bytes": 12307
+    },
+    {
+      "path": "jo_engine/internal/3d.h",
+      "sha256": "181f4f9991c9b3c5f89e4071e2d9473c9bf0cd560136c7ab6101c318479d5521",
+      "bytes": 5064
+    },
+    {
+      "path": "jo_engine/internal/console_builtins.h",
+      "sha256": "512b0741a31f55dd96d3440d62171915baaa5655531e2943e263de82c3fd68c0",
+      "bytes": 3013
+    },
+    {
+      "path": "jo_engine/internal/core.h",
+      "sha256": "012b115135bd370ebdd8b1013215ecb5bbfafaaada8176e741d8f141e08dbcdf",
+      "bytes": 6347
+    },
+    {
+      "path": "jo_engine/internal/fs.h",
+      "sha256": "585949b61ab6e96d42cd854be449464583a0c1635de1d7f8037af3310ac54561",
+      "bytes": 8127
+    },
+    {
+      "path": "jo_engine/internal/model.h",
+      "sha256": "f49ec2097c1d046417d613899e605dccecf7b85061fed94c9d4d5f68f6242603",
+      "bytes": 2569
+    },
+    {
+      "path": "jo_engine/internal/profile.h",
+      "sha256": "0ed45a5ac70cf7fb0f863a4a9d8a36c82ef998fc8f5e531701b9f65dbf11d077",
+      "bytes": 3082
+    },
+    {
+      "path": "jo_engine/internal/sega_saturn.h",
+      "sha256": "9a37a45bf88394817854ee3a8e3931dd4cfb893e9b57928120f364f99f52b345",
+      "bytes": 3015
+    },
+    {
+      "path": "jo_engine/internal/smpc.h",
+      "sha256": "ddad596ee7032537cce1559ba4286cabc72f4277d2dce16f330372b8162ba323",
+      "bytes": 2803
+    },
+    {
+      "path": "jo_engine/internal/sprites.h",
+      "sha256": "b94e9aa28a294cfca0a97fb1873575ce27c0e1d11b9791757207d763a1e7e4ab",
+      "bytes": 3095
+    },
+    {
+      "path": "jo_engine/internal/tools.h",
+      "sha256": "5e4c3aed10bab00558fe73a82a163b66adc0c152e4dd44767915bfec65c889a8",
+      "bytes": 2449
+    },
+    {
+      "path": "jo_engine/internal/vdp1_command_pipeline.h",
+      "sha256": "a5011feca0975af3e0c16f742371fcec33496614306961e14fd6ee9455dbd150",
+      "bytes": 10206
+    },
+    {
+      "path": "jo_engine/internal/vdp2.h",
+      "sha256": "2c1ef80a9b5dc29bbd79b4573b9893e60fadfe128a3d72780942116fa20f92e9",
+      "bytes": 3290
+    },
+    {
+      "path": "jo_engine/internal/vdp2_malloc.h",
+      "sha256": "3668f524389a53bac96428c21fbb085b1c7ee1fd514ce8801057613fcbdd0dda",
+      "bytes": 2431
+    },
+    {
+      "path": "jo_engine/internal/vehicle.h",
+      "sha256": "170bce7ce823d40428da4843fb3bc286e96dc542da71bf167aec04e21d0d82d5",
+      "bytes": 2316
+    },
+    {
+      "path": "jo_engine/jo/3d.h",
+      "sha256": "bd042d0c3aed6c04a1e67212a15bdf8fe00d702e8a4e9df2644b726184ed9fa0",
+      "bytes": 100101
+    },
+    {
+      "path": "jo_engine/jo/audio.h",
+      "sha256": "313d8bbabf64c230deeba75a653cc1d9652d55588856b84ac189af7cd96d6515",
+      "bytes": 22371
+    },
+    {
+      "path": "jo_engine/jo/background.h",
+      "sha256": "a58e8306b68199a0e15c6562da07fdc5cb98216140264200b09fa000baed1dcb",
+      "bytes": 18354
+    },
+    {
+      "path": "jo_engine/jo/backup.h",
+      "sha256": "378d360140844bea299923483f735e10810a48e94fa303d049c235084d2b2367",
+      "bytes": 9727
+    },
+    {
+      "path": "jo_engine/jo/cell.h",
+      "sha256": "729893ef3d92481ce3fd9cb2492470b575d9e03c9d6607e80076a960c4cfe9f7",
+      "bytes": 22202
+    },
+    {
+      "path": "jo_engine/jo/colors.h",
+      "sha256": "7f78758223034123feeb54f905346fef78d2e7ef0c3cd6a63193533ea2b6c407",
+      "bytes": 6830
+    },
+    {
+      "path": "jo_engine/jo/conf.h",
+      "sha256": "de55a59007b90c74fa1467f2831e2af610503fc001995bec5a032a9f7f9bb922",
+      "bytes": 7694
+    },
+    {
+      "path": "jo_engine/jo/console.h",
+      "sha256": "e9263ecac4bc4cdaf52b2d568c6870249e62ee11dcca06c977c8e19c35726ebb",
+      "bytes": 3062
+    },
+    {
+      "path": "jo_engine/jo/core.h",
+      "sha256": "41064b770a2a848b283e1195fea4e81e0958e1249a617a177e9499bfb30a87b6",
+      "bytes": 17321
+    },
+    {
+      "path": "jo_engine/jo/dsp.h",
+      "sha256": "f6ed817138f4248ecdc845c78a8128ca9d15a6e13d15a3f6a186d541557073fb",
+      "bytes": 5053
+    },
+    {
+      "path": "jo_engine/jo/effects.h",
+      "sha256": "01f7f58f261e244bdcc581491a6296f287cca607b1f18eacb026b18300a94abe",
+      "bytes": 9607
+    },
+    {
+      "path": "jo_engine/jo/entity.h",
+      "sha256": "fb4e5d9aca035a9825117f322911f6259d58dee3f8d06bb25592a12affca03a4",
+      "bytes": 29380
+    },
+    {
+      "path": "jo_engine/jo/font.h",
+      "sha256": "ae9154f9581781f9df0513c32928b5c250825da0c4650e6bcce8930d4dbd9d9e",
+      "bytes": 4959
+    },
+    {
+      "path": "jo_engine/jo/fs.h",
+      "sha256": "61489c13dd3672c80d51afac650f87eee28e482efd2fdaf410994067a1b9d9f4",
+      "bytes": 9221
+    },
+    {
+      "path": "jo_engine/jo/glow.h",
+      "sha256": "edbae373076f864444ac9333528c11bad6ad077a24211c576ce06f4f66c21666",
+      "bytes": 7009
+    },
+    {
+      "path": "jo_engine/jo/hitbox.h",
+      "sha256": "a4a34d60c71f85f9917558c024d0ed6561f9a76efd6bea1a5acc7bc52dd503e3",
+      "bytes": 4174
+    },
+    {
+      "path": "jo_engine/jo/image.h",
+      "sha256": "54b7bb6d923e6cc49c5dc159d16c2b5529088025ba898815876b4542c4cbb5c7",
+      "bytes": 6201
+    },
+    {
+      "path": "jo_engine/jo/input.h",
+      "sha256": "12a7f37c90388a8da3172218bd60edff71027a1ce58394a656babe873089c161",
+      "bytes": 13307
+    },
+    {
+      "path": "jo_engine/jo/jo.h",
+      "sha256": "6cc804d587fdd6e5ccecf74569e3c8522e28f7f0c7dd79b25443d34932d74d03",
+      "bytes": 2901
+    },
+    {
+      "path": "jo_engine/jo/keyboard.h",
+      "sha256": "23655721b6ede8db490137655f6d9fb929a324f20fe80d4d9ee6e18ac02d72e2",
+      "bytes": 4760
+    },
+    {
+      "path": "jo_engine/jo/level.h",
+      "sha256": "ff04e2bda62b0a83eadfe170a34c3ae3ce462031816cf4ae7dffae3630dc4a15",
+      "bytes": 7621
+    },
+    {
+      "path": "jo_engine/jo/level_format.h",
+      "sha256": "88452b9686933ba001d132e86e13fa57f294a1d94590413fca2d051ed63ca48b",
+      "bytes": 21416
+    },
+    {
+      "path": "jo_engine/jo/light.h",
+      "sha256": "be870d80fba1d6205b412d15efcf5ecb7004f853add3530bd1988fc59fa2fcf6",
+      "bytes": 10028
+    },
+    {
+      "path": "jo_engine/jo/list.h",
+      "sha256": "49c85d18eaee70713016bcf52c4d12800bd9083e3e2cb418f35e9718b629367e",
+      "bytes": 8983
+    },
+    {
+      "path": "jo_engine/jo/malloc.h",
+      "sha256": "4e8a84b3a53c3639f642f2770fdcd37ffcfb69ed37e8a7572f58f5f923f7424f",
+      "bytes": 5273
+    },
+    {
+      "path": "jo_engine/jo/map.h",
+      "sha256": "9edc61a05c302da41dff73a34c604539ce878605ccb7b3a6f121472093a4db6d",
+      "bytes": 9827
+    },
+    {
+      "path": "jo_engine/jo/math.h",
+      "sha256": "779b3fa6ff2412316cf108956527ef87055f371e01e564de586e17b223a880ed",
+      "bytes": 90447
+    },
+    {
+      "path": "jo_engine/jo/mode7.h",
+      "sha256": "98023088773caa220294117a4372eda53cf31bd6e68d5e0c5da7c243a5c74eb7",
+      "bytes": 4662
+    },
+    {
+      "path": "jo_engine/jo/model.h",
+      "sha256": "b3120d9f9af672b7d5be6ad526d02af28edfa3a8d473bcceb9600b9c1d37935c",
+      "bytes": 26840
+    },
+    {
+      "path": "jo_engine/jo/palette.h",
+      "sha256": "f5e161231011bbbb9e9047798de5b3463d8ae852b2fdbbf09d05022445912d1d",
+      "bytes": 5701
+    },
+    {
+      "path": "jo_engine/jo/physics.h",
+      "sha256": "43bfa4a9d6d2eb70ee8205aef6c68d259fa88a7743784f4bc3197b509a795e67",
+      "bytes": 7276
+    },
+    {
+      "path": "jo_engine/jo/profile.h",
+      "sha256": "aec10b70b464ba916f6a0fcfacbed09d36a018c105e3ec3359ff0ff4b009373d",
+      "bytes": 13278
+    },
+    {
+      "path": "jo_engine/jo/sega_saturn.h",
+      "sha256": "a7b3c7ada91e85fe96b2c438e5ad59dbbc70fcc5f84d84e0b5158916178f6156",
+      "bytes": 52572
+    },
+    {
+      "path": "jo_engine/jo/serial.h",
+      "sha256": "23d25ffad3a40b80d216b089873cb5002405a619303c23aa4f590ac8dd1ad26d",
+      "bytes": 3246
+    },
+    {
+      "path": "jo_engine/jo/smpc.h",
+      "sha256": "0ae9cbfb3f2259a451d641bdcd9d05ed8704f76b0f2c95f70b153f69c20e07e5",
+      "bytes": 12995
+    },
+    {
+      "path": "jo_engine/jo/software_renderer.h",
+      "sha256": "6fec14d101736a784a2d0bd94552320371e81171d9d399e7c0c55f3eee869b78",
+      "bytes": 13836
+    },
+    {
+      "path": "jo_engine/jo/sprite_animator.h",
+      "sha256": "9ce2faf3cdb15130e6fdd1eccc08bd0a4ab49ae0d91d14eac26ff008cdf0e970",
+      "bytes": 7774
+    },
+    {
+      "path": "jo_engine/jo/sprites.h",
+      "sha256": "ded925eb00d2e9d581cdade4d5a4f43e8ba3a28167e614472fd183748d270d39",
+      "bytes": 40477
+    },
+    {
+      "path": "jo_engine/jo/storyboard.h",
+      "sha256": "05ca8914f2554f488cf5deff663fe1c97cd0ea267a46559384011510ed8955ea",
+      "bytes": 16730
+    },
+    {
+      "path": "jo_engine/jo/tga.h",
+      "sha256": "40ecadcb5b3194c8eeb1bc85f844532cc0813978311d4abe64e5bb83585a2d14",
+      "bytes": 11213
+    },
+    {
+      "path": "jo_engine/jo/time.h",
+      "sha256": "cc6cf14279825ca19948bb024653ada8dc891aca249d2c029573c7d3b3ae7568",
+      "bytes": 7755
+    },
+    {
+      "path": "jo_engine/jo/tools.h",
+      "sha256": "49736330f87faabd883fef41254a5d4fe5eb8480b1ab88de4c9eb5c06db14efa",
+      "bytes": 16815
+    },
+    {
+      "path": "jo_engine/jo/types.h",
+      "sha256": "00b2899fd41d0e7f18461fcb85417e37f6ef8d8420fb20cfe2eb4c9eab6a599d",
+      "bytes": 9338
+    },
+    {
+      "path": "jo_engine/jo/vcd_card.h",
+      "sha256": "8ee95a9b4fb7cd526fd63d70bc67f5e3702a0f858ccec841f7562488c10866ca",
+      "bytes": 2864
+    },
+    {
+      "path": "jo_engine/jo/vdp1_command_pipeline.h",
+      "sha256": "7d98372a995210cd62cc265174333c9f637608bb5b0fe43199ef2cf2b5c28e8b",
+      "bytes": 19668
+    },
+    {
+      "path": "jo_engine/jo/vdp2.h",
+      "sha256": "9b716f46e1a02f46531a5696dac20003788b3e49e9c3a1c2409620c49e894493",
+      "bytes": 53531
+    },
+    {
+      "path": "jo_engine/jo/vdp2_malloc.h",
+      "sha256": "616e4f8a5a74cab41cd2d1622f6dc963e62956955de371cc3c9a6a932f483355",
+      "bytes": 4686
+    },
+    {
+      "path": "jo_engine/jo/vehicle.h",
+      "sha256": "87e88a481ad0ba5b1f0ea95fd2e1b83219d2b638504db99dd0f53adaee3ce255",
+      "bytes": 6844
+    },
+    {
+      "path": "jo_engine/jo/video.h",
+      "sha256": "d5a297b109377eec1cad9be4caf0c8626e01de2d3929975d0c527dfc1ba69b23",
+      "bytes": 3716
+    },
+    {
+      "path": "jo_engine/jo/voxel.h",
+      "sha256": "fb607f013123b5bb024989bd185da1ed7dcd1848642e84aafe02417aef57731b",
+      "bytes": 10262
+    },
+    {
+      "path": "jo_engine/jo/weapon.h",
+      "sha256": "ba178e72f1c2d561da1a92db28309a1f28943e10ba6d6b1d6edd2a0186e65ef9",
+      "bytes": 7440
+    },
+    {
+      "path": "jo_engine/keyboard.c",
+      "sha256": "0106f1657c5d8edfc51d108d04a49bf143f70f2de3f7395d7918b157ddb694ac",
+      "bytes": 6318
+    },
+    {
+      "path": "jo_engine/level.c",
+      "sha256": "34a33ec2a5fbe4aff67df7cdbc180da21f746c36fbb3b97b852f889227c11938",
+      "bytes": 11462
+    },
+    {
+      "path": "jo_engine/light.c",
+      "sha256": "e3330e1313974f815b5eda47fe8c8eee826ba25d26e0f2d64b539cdfbd6faf3a",
+      "bytes": 46498
+    },
+    {
+      "path": "jo_engine/list.c",
+      "sha256": "0a70f460310b94f365fc8b0e6c0204772e479784e17ab8fb64aef882f5037df4",
+      "bytes": 5850
+    },
+    {
+      "path": "jo_engine/malloc.c",
+      "sha256": "8642d97aca73a37ce735eab92834d07f639f9779c8e7a903169e2c3e352aee68",
+      "bytes": 12531
+    },
+    {
+      "path": "jo_engine/map.c",
+      "sha256": "9d528a85ae4844f3808718476e160b3ca47f9b7eeaef9498ddcd5477eb478063",
+      "bytes": 21633
+    },
+    {
+      "path": "jo_engine/math.c",
+      "sha256": "35ac63174a9422e8004bc75d629462518880647f6c955e4fabc209954039776f",
+      "bytes": 33840
+    },
+    {
+      "path": "jo_engine/mode7.c",
+      "sha256": "09ad871fe94609fafeccb8afcf2df264d89226f19c222a57ba7f30f4c818accf",
+      "bytes": 9066
+    },
+    {
+      "path": "jo_engine/model.c",
+      "sha256": "f30c66925adfbbd004e93ca290a2fd846a53e032e2b933cb74b4227f65e40427",
+      "bytes": 67365
+    },
+    {
+      "path": "jo_engine/palette.c",
+      "sha256": "c4accc022841112e39e9c9f45c3d73d686488ec4c151ee906a75e5e3bd38f4ba",
+      "bytes": 4499
+    },
+    {
+      "path": "jo_engine/physics.c",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jo_engine/profile.c",
+      "sha256": "b6e6882044ee18eb0a3b39068a5ce2151cd148c0ff60f921765090b136b8c74e",
+      "bytes": 18969
+    },
+    {
+      "path": "jo_engine/scsp_dsp_reverb.h",
+      "sha256": "88d1fd8361b7de410bfc4c259beca14c428b727efb460ac8456739de3ed2193a",
+      "bytes": 5914
+    },
+    {
+      "path": "jo_engine/serial.c",
+      "sha256": "ffe431a3d007659eab07fc1c921da83d1755718dfc2654d6055d631234d4aa40",
+      "bytes": 3760
+    },
+    {
+      "path": "jo_engine/slave.c",
+      "sha256": "fd4125b5c76add9af57af2d0c913f11604c1740eeda5ce925db31f08e1feb53c",
+      "bytes": 20653
+    },
+    {
+      "path": "jo_engine/smpc.c",
+      "sha256": "7a9d471298540f38b124db23dfc2966e442d36a972893d74887fb335a04a6e82",
+      "bytes": 28616
+    },
+    {
+      "path": "jo_engine/software_renderer.c",
+      "sha256": "cae807bac6e90f80f242ba3dbd0ea4d5ee5f2b8e52c892df000ce248849e4cb2",
+      "bytes": 47242
+    },
+    {
+      "path": "jo_engine/sound_driver/crt0.S",
+      "sha256": "7405331039f4d0bd2d10651d36af3d05bdf3554c246c7684591a2a1ca9d47cd9",
+      "bytes": 503
+    },
+    {
+      "path": "jo_engine/sound_driver/driver.c",
+      "sha256": "99be9449833da0142d9aed0ef770992e01b2e4d558ff01725d4b14e84628f238",
+      "bytes": 7881
+    },
+    {
+      "path": "jo_engine/sound_driver/protocol.h",
+      "sha256": "3fdbc4826268ea2fe82025338abf9267312ab33b79b9fcd2ad0e4b0246f391a7",
+      "bytes": 5081
+    },
+    {
+      "path": "jo_engine/sprite_animator.c",
+      "sha256": "74d9d391471a4f19a9329f6ec5b68d60732a1bf3ac1b39953bbb65fba2ba349a",
+      "bytes": 6867
+    },
+    {
+      "path": "jo_engine/sprites.c",
+      "sha256": "455683a72c42d11dac2e19b0cb508f7380ea0407c3bdee97654b0cfa4a9d8b7f",
+      "bytes": 30453
+    },
+    {
+      "path": "jo_engine/start.S",
+      "sha256": "a77c303e2b5c3a9f2ca1333bdbf308e88f01a66c1fcd641da1daaf8ad3f78904",
+      "bytes": 3491
+    },
+    {
+      "path": "jo_engine/storyboard.c",
+      "sha256": "6bec6bd2d2536277228f2c27ec03b83fe56e629428151bd7be95b57802fb4d10",
+      "bytes": 9389
+    },
+    {
+      "path": "jo_engine/tga.c",
+      "sha256": "ccf5eea30f6b8b7fb6a25c1aae4854abd3aa3fc8d1dd1bd828f161131aa186ae",
+      "bytes": 29301
+    },
+    {
+      "path": "jo_engine/time.c",
+      "sha256": "3275f8380e5cc3e6eae21d303e5c82988afb3fbe34b6df63eba289eff856fad5",
+      "bytes": 6274
+    },
+    {
+      "path": "jo_engine/tools.c",
+      "sha256": "b328d79e6f6799340e680d688dd2d938f15cd136c337bf64fb1d406301b5c651",
+      "bytes": 27109
+    },
+    {
+      "path": "jo_engine/vcd_card.c",
+      "sha256": "b0365dba6f2fa82beeec2cb3b6e643c9f8fb9395b351c0fa5b32760242df9be4",
+      "bytes": 3528
+    },
+    {
+      "path": "jo_engine/vdp1_command_pipeline.c",
+      "sha256": "7517395c71374be5eaee8995a7e2df39c0e4db55fbaa63341b6c49a15a12c542",
+      "bytes": 96007
+    },
+    {
+      "path": "jo_engine/vdp2.c",
+      "sha256": "28a963b0c4f42ef923e7f8ec3fc9be3f097e2a2d98cc5ace8070c9cda8cdbba9",
+      "bytes": 176018
+    },
+    {
+      "path": "jo_engine/vdp2_malloc.c",
+      "sha256": "b62c448cc833bc5477670a56a20ca9db7585b75d73edcd5e9bd000791252f1c0",
+      "bytes": 17527
+    },
+    {
+      "path": "jo_engine/vehicle.c",
+      "sha256": "f9419937983ea4162765582806dbda70cc1a05d7b4dd8cddcd93887c0f6c9a31",
+      "bytes": 18026
+    },
+    {
+      "path": "jo_engine/video.c",
+      "sha256": "6a1bea825a04f9e0266ac68fe3c3a7a378a103330110a0be085dc6f007a95f3b",
+      "bytes": 37989
+    },
+    {
+      "path": "jo_engine/voxel.c",
+      "sha256": "b593bbdbedd464c4e2c9876542fd0065f05b509a3124bd45dc3482f1d549f46b",
+      "bytes": 15621
+    },
+    {
+      "path": "jo_engine/weapon.c",
+      "sha256": "8138cbccfe820bc52322eb099fb0e8df7cb339964d22d137b9ce9ab9f4c645f5",
+      "bytes": 13399
+    },
+    {
+      "path": "main.c",
+      "sha256": "18297820e74992fc776edc466e262502d3a94918cbcc9c5d727ed8acf34a8308",
+      "bytes": 22371
+    },
+    {
+      "path": "makefile",
+      "sha256": "5bb98ac0ecec821e3c7046ae7f6f693f007290e599a16d467a585f06b8fe93d9",
+      "bytes": 1954
+    },
+    {
+      "path": "render_common.c",
+      "sha256": "3b1d81ee7d80c2d37c68704a670cdc9cc84845834481ec8e7c16ad8d2525bbe9",
+      "bytes": 18060
+    },
+    {
+      "path": "renderer.c",
+      "sha256": "abedf13606f14ad29ce9d7e4f8099059c3c3af4a3db7a9e89ebc0e95ca87f19b",
+      "bytes": 57078
+    },
+    {
+      "path": "savegame.c",
+      "sha256": "23512e087a03d5e5fb760f794c2c00323fe6d8153507ebea7c88255e7ebd9d22",
+      "bytes": 2895
+    },
+    {
+      "path": "stack_usage.c",
+      "sha256": "6b6d4616fa618ccab621d68ad82dc1aa59208d7e5b7cfd9b3a455d54b3def53f",
+      "bytes": 1554
+    },
+    {
+      "path": "stage/crocodile.c",
+      "sha256": "a8857105b4d4fc195377880f7d33e316369cec878fd24ad26bc75aacc14df913",
+      "bytes": 14921
+    },
+    {
+      "path": "stage/crocodile.h",
+      "sha256": "18b88f6c42d19566dfb80eba0b8324611e0e553aa8e5c773206bf94393e683d0",
+      "bytes": 1832
+    },
+    {
+      "path": "stage/fauna.c",
+      "sha256": "99621eae8f7211c92f56edf2d24ab573337a21543d8bdf2e5edca72a7b0a2b9c",
+      "bytes": 8035
+    },
+    {
+      "path": "stage/fauna.h",
+      "sha256": "b50ad0178d0197d3fff22ae7f1339438932d38ca9c1a14a74321de687a9652c9",
+      "bytes": 1696
+    },
+    {
+      "path": "stage/fauna_bird.c",
+      "sha256": "a5f35712842c7e17153a166e0122cd0b7e25c8a3bc8ba1dbe9e73cb9f0bc4132",
+      "bytes": 5515
+    },
+    {
+      "path": "stage/fauna_bonus.c",
+      "sha256": "e37238c80c6e4b33e79b9e4e6b24f5d21172906576a20e102080be9acdffe17e",
+      "bytes": 1675
+    },
+    {
+      "path": "stage/fauna_dispatch.c",
+      "sha256": "cef514564c9fd5a27f89e22279b9a9a66b8df25d693acce5c91e39ec218fb184",
+      "bytes": 655
+    },
+    {
+      "path": "stage/fauna_internal.h",
+      "sha256": "81db99faed6c3e02b553fc20036cca09687cea56a1fb90afa75329dfca2f423d",
+      "bytes": 1129
+    },
+    {
+      "path": "stage/fauna_puffer.c",
+      "sha256": "ef5637fa1d652f613be436474d6b5e9c18e7aee2ef933191e829fb8d53fd51bb",
+      "bytes": 9005
+    },
+    {
+      "path": "stage/fauna_transients.c",
+      "sha256": "2a42ffb15d6a9c4c617bfff49909c7da27614bf87e43a70fb701ee1cc0f20fdc",
+      "bytes": 1502
+    },
+    {
+      "path": "stage/fauna_transients.h",
+      "sha256": "46ca3c73befab46276164c5ebe918d7d9286596fb7624e207fb755ba1791bbe3",
+      "bytes": 647
+    },
+    {
+      "path": "stage/player_vertical.c",
+      "sha256": "704b662963404fcb13340fff8d7ac9dc42b30dc9b15bbefcd718f91f1e15afb7",
+      "bytes": 10913
+    },
+    {
+      "path": "stage/player_vertical.h",
+      "sha256": "f8ee71d759bb8b5b971ae9ca62225dc9ee4f35f73d445c3f45c913e6911786b7",
+      "bytes": 899
+    },
+    {
+      "path": "stage/prepare_data.py",
+      "sha256": "5fc25d21d3c59aab602e2657abd0b70acb37a5ac59b0fab036e76ea7c2a0f92b",
+      "bytes": 19718
+    },
+    {
+      "path": "stage/spang_actor_motion.c",
+      "sha256": "0953effed95e9e950eb17d27bea096bc0c462faa57d8165ed46855a1230119f3",
+      "bytes": 1151
+    },
+    {
+      "path": "stage/spang_actor_motion.h",
+      "sha256": "05ee39c8a60c044acf503eab24b2a1e94d9ce478c870cde0b5fa952aacc2c5d2",
+      "bytes": 425
+    },
+    {
+      "path": "stage/spang_attract_input.c",
+      "sha256": "6e16feece661dbc529bfbf58fa5d1a7c1e806d0b1869cee7eafe7b50699b2305",
+      "bytes": 1026
+    },
+    {
+      "path": "stage/spang_attract_input.h",
+      "sha256": "0e2a775344d537aacaf3f82e6965fb364b39a087fbf2ce740dce4a0a6273d1eb",
+      "bytes": 738
+    },
+    {
+      "path": "stage/spang_attract_tutorial.c",
+      "sha256": "f543097ce7c154b044ca0fa0b7cfb3b82ed4bc0ce67dbd1b66f6781cd9b6af31",
+      "bytes": 3621
+    },
+    {
+      "path": "stage/spang_attract_tutorial.h",
+      "sha256": "06128b8b41b1e0c4071bd9fcefb4f64dedd492a97c210bc75b2978384f6086ea",
+      "bytes": 928
+    },
+    {
+      "path": "stage/spang_ball_collision.c",
+      "sha256": "98067c59dc7da51c6d350c6d614eee30a1ad937fb1db11e8c30d2d66d21cc90c",
+      "bytes": 1950
+    },
+    {
+      "path": "stage/spang_ball_collision.h",
+      "sha256": "841b59387785fc8faf3ecd4da09708c4f44edacf4e79a4e8c9938fbc6c816699",
+      "bytes": 658
+    },
+    {
+      "path": "stage/spang_ball_phase.c",
+      "sha256": "6854e897d360ff28212e97d4bf564cea795c53f9a2a5d5b0bf43cb29b1896db2",
+      "bytes": 1090
+    },
+    {
+      "path": "stage/spang_ball_phase.h",
+      "sha256": "3ed4af2a223a4037fe8a70a1227591a78850acce6d60f5ea33bf537a3e825147",
+      "bytes": 712
+    },
+    {
+      "path": "stage/spang_bonus_life.c",
+      "sha256": "997710ebb56ee793dfe8bbcbd14567d413176dc46dbb0c5382a912d558ea94fe",
+      "bytes": 1651
+    },
+    {
+      "path": "stage/spang_bonus_life.h",
+      "sha256": "81325fb078c4266fd7cc77848a7cb2f568c6da2d00c8e3e3a91ce341ec52b09d",
+      "bytes": 904
+    },
+    {
+      "path": "stage/spang_frame_clock.h",
+      "sha256": "f926ab25dbd762ee4ca6ee99bf13cbd1248f751414defbb8be86c3762fd92928",
+      "bytes": 481
+    },
+    {
+      "path": "stage/spang_geometry.c",
+      "sha256": "7e4a5dd1864006f104fc830290fc6078c3161cf50961e4c7a5fb707356d90a16",
+      "bytes": 1239
+    },
+    {
+      "path": "stage/spang_geometry.h",
+      "sha256": "2a340df3812bec7ed7159ab6922e25dc402f511bce5e10808694eba6490bd9ab",
+      "bytes": 768
+    },
+    {
+      "path": "stage/spang_harpoon.c",
+      "sha256": "63f4c04dbdfdcb1ae9a3719973f4a658b7eb4171816cfcc5a21f2856e96b6fb7",
+      "bytes": 5055
+    },
+    {
+      "path": "stage/spang_harpoon.h",
+      "sha256": "e7cdb5633ff8366e23d1094bde0d2c33af17b1924373ebe597369fb6ce1513e5",
+      "bytes": 887
+    },
+    {
+      "path": "stage/spang_items.c",
+      "sha256": "b1ec872aff9754b8ff5061c84ade8474161f65516fa61ddd90ab28f0948b9630",
+      "bytes": 10853
+    },
+    {
+      "path": "stage/spang_items.h",
+      "sha256": "5680c206849e7c323dffcbec5ce99f7e9ae43aba1b33b9d3d8e986d3068be257",
+      "bytes": 3021
+    },
+    {
+      "path": "stage/spang_life_sequence.c",
+      "sha256": "d7508dadffd1f391422acbba2241454001c8973792e821da9a340f53c33babe8",
+      "bytes": 1437
+    },
+    {
+      "path": "stage/spang_life_sequence.h",
+      "sha256": "90061f79b43a51d50c53367a90a50afba7b6e1b4eddf0c49860f8a86bec43399",
+      "bytes": 999
+    },
+    {
+      "path": "stage/spang_lives_draw.c",
+      "sha256": "87aac3e5139919fec60d93fd2e114f56993ece0578592aca0c82dedcf0e513ec",
+      "bytes": 2323
+    },
+    {
+      "path": "stage/spang_lives_draw.h",
+      "sha256": "1aeffe59ddf65081279e596087029b064aafa76155f040aebed9e3d023184d0b",
+      "bytes": 522
+    },
+    {
+      "path": "stage/spang_map_presentation.c",
+      "sha256": "53a5da64f7c7356ac8e59808a46287a8fec75457e3cd5b2e981e624ad7172aaf",
+      "bytes": 702
+    },
+    {
+      "path": "stage/spang_map_presentation.h",
+      "sha256": "6ea3a7523204292cdda6e0bf9f03ae27c9ccdbcaaed1da53d53cf3bb2b318651",
+      "bytes": 966
+    },
+    {
+      "path": "stage/spang_motion_bonus.c",
+      "sha256": "dddd0386d081d5f98393d5d798c0fdc520e6189b7a3bd5438124eaf82079bd6d",
+      "bytes": 465
+    },
+    {
+      "path": "stage/spang_motion_bonus.h",
+      "sha256": "b60094d03a82f2916f9d106c11931043f5725e2686ed811ee6ab217175f940b1",
+      "bytes": 475
+    },
+    {
+      "path": "stage/spang_panic.c",
+      "sha256": "b591517d8787dfdd32d41a7bc0928551d8efcb0de6d2f727bb1506aaca966277",
+      "bytes": 7985
+    },
+    {
+      "path": "stage/spang_panic.h",
+      "sha256": "9780934c4c5922b1f25fa395ed0ca5c38778f92bce4a09f230f772ac6a422088",
+      "bytes": 2042
+    },
+    {
+      "path": "stage/spang_panic_video.c",
+      "sha256": "a4f19386480ac519a4bb5d6e85eb3664a0ac5b24b6aa287db426d7a991036e62",
+      "bytes": 4461
+    },
+    {
+      "path": "stage/spang_panic_video.h",
+      "sha256": "55cc23befbe9b9bfc4c6e568e9f11b010d9b0ff4c3480b96badb401c922b0f24",
+      "bytes": 1001
+    },
+    {
+      "path": "stage/spang_platform_effect.c",
+      "sha256": "76cf2a2ca8bb7a7303a36d2fb0a161bdb7c021627d43f1a755fa7617fc7f6006",
+      "bytes": 2457
+    },
+    {
+      "path": "stage/spang_platform_effect.h",
+      "sha256": "ae3281eee8f31fb884c855ecd11ce6d421a882c4838f534c152da16406ddf117",
+      "bytes": 504
+    },
+    {
+      "path": "stage/spang_player_control.c",
+      "sha256": "e50b10291a2dccdc503ae0e586c2a8cfd68deb4078aa5042aa8eac93e97173d2",
+      "bytes": 4484
+    },
+    {
+      "path": "stage/spang_player_control.h",
+      "sha256": "ec7fb1cf5c4bf56462014380dd0d88c3b8a8c442f08251d1b978ccad78e0d351",
+      "bytes": 905
+    },
+    {
+      "path": "stage/spang_player_damage.c",
+      "sha256": "862d7246d83f06fbaf0df82e8ab2ef30e01534e38e9a32ceb16422ce04df050b",
+      "bytes": 3875
+    },
+    {
+      "path": "stage/spang_player_damage.h",
+      "sha256": "dca982e0db84e08994b72409d2e299562fd71c475cddc2030e3d6447dab31b2a",
+      "bytes": 1112
+    },
+    {
+      "path": "stage/spang_round_aux.c",
+      "sha256": "f6d7c1e9fbcd5429bb7ff3e1b4b75f84a5477ed015714162ff22ce7be9c8ba92",
+      "bytes": 8604
+    },
+    {
+      "path": "stage/spang_round_aux.h",
+      "sha256": "c5fde3b74e4732ba0374822d1371ac7e96380e4ccad1f7e4dfd3004afd24bb37",
+      "bytes": 2302
+    },
+    {
+      "path": "stage/spang_round_ball.c",
+      "sha256": "07d60cf9df3715c182d86bfb99fd2f87d18e7584156ae1ef6cf7a2bf1eb10555",
+      "bytes": 14748
+    },
+    {
+      "path": "stage/spang_round_ball.h",
+      "sha256": "8d1e05220942c6fabfbaa5ff773e71d96d75deda4c848af94513ea0ecd86ebde",
+      "bytes": 1358
+    },
+    {
+      "path": "stage/spang_round_bonus_box.c",
+      "sha256": "73fd6413d2f5498625f33e95e93e7fd4940d15e7795fe813a5662dcc37716c2a",
+      "bytes": 5733
+    },
+    {
+      "path": "stage/spang_round_bonus_box.h",
+      "sha256": "b4a227074322970c1b1d682c27c25d408c6b0bfbcda3d63c700bf9466ccfe87c",
+      "bytes": 1818
+    },
+    {
+      "path": "stage/spang_round_bonus_mask.c",
+      "sha256": "e026563bc32774d9f9bdf03cbb4044ab4641ae5d068b2641e2eb36d7cccfb434",
+      "bytes": 1354
+    },
+    {
+      "path": "stage/spang_round_bonus_mask.h",
+      "sha256": "ad021c69c5eb863e02765b1589a11284e555f9b1df088de462d50320ddca34a4",
+      "bytes": 457
+    },
+    {
+      "path": "stage/spang_round_clear.c",
+      "sha256": "900a848a5490bcb649dcdcf6ecf99e7ccd76e75d7a93f7f57c99dc74290eaa9a",
+      "bytes": 3301
+    },
+    {
+      "path": "stage/spang_round_clear.h",
+      "sha256": "e35c9a7fd8da5eaca4e623aa7d41f697aaa3cff6de4701ee2fae72bdbe7a91bc",
+      "bytes": 1872
+    },
+    {
+      "path": "stage/spang_round_clock.c",
+      "sha256": "0a16aed511e5c2e5adf3bd0c96fdb4250b64c1da7a46f93dc83a4193f1beedbf",
+      "bytes": 2671
+    },
+    {
+      "path": "stage/spang_round_clock.h",
+      "sha256": "8cf2a1d13e043efefaf52c407d728712cb70ee43b354c22ab6631dd8225ba235",
+      "bytes": 1281
+    },
+    {
+      "path": "stage/spang_round_flow.c",
+      "sha256": "dcebbe346a112d2f6e1d35f9ce43f26681644cdab9ba1eb89d6243d24d4b20cd",
+      "bytes": 1990
+    },
+    {
+      "path": "stage/spang_round_flow.h",
+      "sha256": "b9e910dc878e464520a3a173a7c5380e598cc755fcd8926a8ced8a1e3a7b2719",
+      "bytes": 1287
+    },
+    {
+      "path": "stage/spang_round_frame.c",
+      "sha256": "0d52eeaf5c57c6531308d56e984116fa87f0e27cee086a893f8bbfb1f6f261db",
+      "bytes": 16086
+    },
+    {
+      "path": "stage/spang_round_frame.h",
+      "sha256": "49fca4845b8bee5c3b14c3aa13f957e315694b5dd3fb32f35e0d4677f58155a8",
+      "bytes": 2485
+    },
+    {
+      "path": "stage/spang_round_rewards.c",
+      "sha256": "de7c42d77bcd25fb9e27cc66c4880570f87d23489aaede18330856320ad85643",
+      "bytes": 1732
+    },
+    {
+      "path": "stage/spang_round_rewards.h",
+      "sha256": "6a933e90212e5246647106c1f0939c6a7bc150a50ae7a5eb097d6b74691e5d41",
+      "bytes": 636
+    },
+    {
+      "path": "stage/spang_round_scene.c",
+      "sha256": "4ac2975596f82f891796f5490f8bae7fae3a401d5c8c63a01aab91e9b585a74c",
+      "bytes": 3898
+    },
+    {
+      "path": "stage/spang_round_scene.h",
+      "sha256": "edd148afbad4107f8d381065ea77a2c4fc6819bb913cde04590bef99cc22e74a",
+      "bytes": 1376
+    },
+    {
+      "path": "stage/spang_round_speed.c",
+      "sha256": "1188a1db0d75abaf759a77088ac7e3c7dc10e5c374d0ceaed7ab2c979356a7b2",
+      "bytes": 690
+    },
+    {
+      "path": "stage/spang_round_speed.h",
+      "sha256": "4a9867c13624c072c87209a0497def55b5885af1be17758d49627ccd63c845c1",
+      "bytes": 459
+    },
+    {
+      "path": "stage/spang_scene_data.c",
+      "sha256": "dcaa1fbe8884231d6f1008a9506e857c30fdfa3a634a724071dea835e45bbb61",
+      "bytes": 1661
+    },
+    {
+      "path": "stage/spang_scene_data.h",
+      "sha256": "07e1aad70cd9f70b9e6ba030247c675690159650f441fea385bec6caadbadf63",
+      "bytes": 347
+    },
+    {
+      "path": "stage/spang_score.c",
+      "sha256": "5b4e27093c8c127436fbffb24722c6f6ecc47030a67e329c206813f906d00f88",
+      "bytes": 1480
+    },
+    {
+      "path": "stage/spang_score.h",
+      "sha256": "d66e3b50965f69dd055b6c1b40f62d2405c13ba4467d3a2d2c026aedfa7ca906",
+      "bytes": 874
+    },
+    {
+      "path": "stage/spang_score_draw.c",
+      "sha256": "5fd8f33438e50c7039e0aaa88e10950f50087e4f52da12ed22b7546bcb4caa76",
+      "bytes": 534
+    },
+    {
+      "path": "stage/spang_score_draw.h",
+      "sha256": "3cbe7de2606bfe58e57a241aae3607a622170f6e5c84d1129029e897cf8ff555",
+      "bytes": 617
+    },
+    {
+      "path": "stage/spang_small_ball.c",
+      "sha256": "c11f907ee0dc722f19b724f9d4e96a1796d498f214235e4a1883784436a4b2f8",
+      "bytes": 1659
+    },
+    {
+      "path": "stage/spang_small_ball.h",
+      "sha256": "71a4627755c881510a60ea69b2106038d0b58ec29b9b224e8bb201a69e5b3cae",
+      "bytes": 624
+    },
+    {
+      "path": "stage/spang_sprite_overlay.h",
+      "sha256": "5b6dbaf385b7ef1a1a05f521913fe54c8a6956e957dd2ca61cd6f86deca24b54",
+      "bytes": 1963
+    },
+    {
+      "path": "stage/spang_stage_bootstrap.c",
+      "sha256": "2524a1909e1f8770b61af55aa3dd7e8e2408b73832db334fcb13d1978e846633",
+      "bytes": 7277
+    },
+    {
+      "path": "stage/spang_stage_bootstrap.h",
+      "sha256": "86e0e5cef66bf1ca2b50c5cf93ea734ac13639a4ea694c7220e26408724d2af9",
+      "bytes": 1160
+    },
+    {
+      "path": "stage/spang_stage_session.c",
+      "sha256": "e076c5c5a4288e5f969207a5bd649e840e8c85da2c8fbfabb97e26c62af3cee4",
+      "bytes": 1487
+    },
+    {
+      "path": "stage/spang_stage_session.h",
+      "sha256": "a3705aae8530df7831486de76c175ed3a99061b2e2f945666d61107a7bbce74f",
+      "bytes": 813
+    },
+    {
+      "path": "stage/spang_tour_ending.c",
+      "sha256": "cc4f50942caf84bcba5f184f11a22c6af6919f087cc24bf550145e4a6afe3183",
+      "bytes": 9348
+    },
+    {
+      "path": "stage/spang_tour_ending.h",
+      "sha256": "0d773d263137aed001a3a0fe2df4b2dad8dd58d984ebe4661c51bb39edc3dfbf",
+      "bytes": 823
+    },
+    {
+      "path": "stage/spang_tour_map.c",
+      "sha256": "6773352a5d97d068e8b15718f95bec1d524f529305327da9960e11bef6c67687",
+      "bytes": 3827
+    },
+    {
+      "path": "stage/spang_tour_map.h",
+      "sha256": "e5c29665e7249e626fbc0cf7089afd6791b47296b5bf3de34a53d2808a550767",
+      "bytes": 420
+    },
+    {
+      "path": "stage/spang_tour_plane.c",
+      "sha256": "fc58d2647ca4ba18a65543102f2adffc49f3a0b86b0db50852199a2cbd5d4b35",
+      "bytes": 2784
+    },
+    {
+      "path": "stage/spang_tour_plane.h",
+      "sha256": "54b546730589fc453c687de166e0089658632fbda66a4d459f50f6b24903a991",
+      "bytes": 693
+    },
+    {
+      "path": "stage/spang_tour_region.c",
+      "sha256": "44a102478f0474b8027cd2498b0fd7a808c52a82de8771f14d56c90166797c88",
+      "bytes": 1546
+    },
+    {
+      "path": "stage/spang_tour_region.h",
+      "sha256": "cee7ece4e7814ec043dd6f29d045c1c15a3ff6e0f0e385b723f61766f222df91",
+      "bytes": 486
+    },
+    {
+      "path": "stage/spang_video_commands.c",
+      "sha256": "767378d45204ce267ef80af6c8def7b3c5a6b608b5149ad4c03b7fbdc9546b15",
+      "bytes": 4387
+    },
+    {
+      "path": "stage/spang_video_commands.h",
+      "sha256": "98eb01fac744b7ec1bebdeae7b97fd110a57d30f413a784c308d60fa10c1e96a",
+      "bytes": 1371
+    },
+    {
+      "path": "stage/spang_weapons.c",
+      "sha256": "f9c7e83733b63e4b54aec31e1992d042f9e3e4f8a23c4da69bb182be013b5bce",
+      "bytes": 9283
+    },
+    {
+      "path": "stage/spang_weapons.h",
+      "sha256": "c1f7b821a3dd49fb224953586fdaba16a0e9861a041e4b1c579f2adff9e1f440",
+      "bytes": 3238
+    },
+    {
+      "path": "stage/stage.c",
+      "sha256": "dfc005e4cc90120384946844a05e2caef715768db107efc8ab686c323759a304",
+      "bytes": 93250
+    },
+    {
+      "path": "stage/stage.h",
+      "sha256": "f814907e26866d0f9bc793ed821c44b4b27389c4a05b05da7866263a071109f2",
+      "bytes": 7094
+    },
+    {
+      "path": "stage/stage_data.h",
+      "sha256": "d07a013eaa1188942ec2cb9c902a9101a25bab9ac9813a82d06c63f06ee952e0",
+      "bytes": 7311
+    },
+    {
+      "path": "tools/mkisofs",
+      "sha256": "f04015255c99982878cba3832f5be6d30ba5ff48563f4c221307bbe118e8c700",
+      "bytes": 1356
+    },
+    {
+      "path": "tools/prepare_disc.py",
+      "sha256": "1c07006008998cf050a56acd53f597b654843f5af631209ecf736e5868df613e",
+      "bytes": 1360
+    },
+    {
+      "path": "tools/verify_cd_raw.c",
+      "sha256": "8c184bd80a69aa34ee0a104dd9aef3a3c5f38b25182530022f46f99f80c0ffbe",
+      "bytes": 2384
+    }
+  ]
+}

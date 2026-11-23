@@ -1,0 +1,1 @@
+Super Pang Saturn R10 R17: Tour and Panic, title menu, console options and internal Backup RAM records/settings. Native NTSC 320x240 progressive. Emulator validation is documented separately; no physical Saturn validation is claimed.

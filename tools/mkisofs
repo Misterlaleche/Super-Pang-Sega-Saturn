@@ -1,0 +1,32 @@
+#!/bin/sh
+set -eu
+task_root=$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)
+if [ -x "$task_root/iso-runtime/usr/bin/xorrisofs" ]; then
+    exec env LD_LIBRARY_PATH="$task_root/iso-runtime/isolated-libs" "$task_root/iso-runtime/usr/bin/xorrisofs" "$@"
+fi
+if command -v xorrisofs >/dev/null 2>&1; then
+    exec xorrisofs "$@"
+fi
+if command -v xorriso >/dev/null 2>&1; then
+    exec xorriso -as mkisofs "$@"
+fi
+# Native mkisofs matches full input paths, unlike xorrisofs' */ART patterns.
+# Translate the existing list for this invocation; keep the source list intact.
+exec python3 - "$@" <<'PY'
+from pathlib import Path
+import subprocess
+import sys
+import tempfile
+args = sys.argv[1:]
+source = args[-1].rstrip('/')
+if not Path(source).is_dir():
+    raise SystemExit('Expected the CD source directory as the final argument')
+with tempfile.TemporaryDirectory(prefix='spang-mkisofs-') as temporary:
+    for index, argument in enumerate(args[:-1]):
+        if argument == '-exclude-list':
+            original = Path(args[index + 1]).read_text().splitlines()
+            target = Path(temporary) / ('exclude-' + str(index))
+            target.write_text(''.join((source + '/' + line[2:] if line.startswith('*/') else line) + '\n' for line in original))
+            args[index + 1] = str(target)
+    raise SystemExit(subprocess.run(['mkisofs', *args]).returncode)
+PY

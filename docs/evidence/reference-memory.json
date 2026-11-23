@@ -1,0 +1,115 @@
+{
+  "elf_sha256": "e4fe164fa1d90843a834533d76a9c9d14700d69ad523d1cdb8b0340d982b1683",
+  "sections": {
+    "JO_START": {
+      "address": "0x6004000",
+      "bytes": 88,
+      "nobits": false,
+      "sha256": "1a61e79a0dd8a378d53642766bc30d8df95f2036fd37c3d05e3cac0ee98e6340"
+    },
+    ".text": {
+      "address": "0x6004060",
+      "bytes": 230592,
+      "nobits": false,
+      "sha256": "5df2443d01a04873cf0be5ad99c9795e536b33e07fd2ec47b3030f3075c234d3"
+    },
+    ".rodata": {
+      "address": "0x603c520",
+      "bytes": 323990,
+      "nobits": false,
+      "sha256": "34d61bdd9ca9793a3eadb96633964b6dcfdc8ea8253e354f7c83fca8bb9ea479"
+    },
+    ".data": {
+      "address": "0x608b6c0",
+      "bytes": 272,
+      "nobits": false,
+      "sha256": "d6957d4fa59578973d9e4b379bd36e536c7f8bc518dc79db9ec1475b50bac485"
+    },
+    ".bss": {
+      "address": "0x608b7d0",
+      "bytes": 334840,
+      "nobits": true,
+      "sha256": null
+    },
+    "JO_WORK": {
+      "address": "0x60e0000",
+      "bytes": 35280,
+      "nobits": true,
+      "sha256": null
+    }
+  },
+  "high_ram": {
+    "bend": "0x60dd3c8",
+    "work_start": "0x60e0000",
+    "work_end": "0x60e89d0",
+    "stack_start": "0x60fbc00",
+    "stack_top": "0x060FFC00",
+    "stack_reserved_bytes": 16384,
+    "main_heap_reserved_bytes": 108544,
+    "prework_usable_heap_bytes": 11312,
+    "postwork_usable_heap_bytes": 78384,
+    "gap_to_stack_is_heap_not_stack_watermark": true
+  },
+  "allocator_model": {
+    "scope": "Production allocator with startup/music-cache order and temporary 24696-byte Backup RAM workspace plus 217-byte read at boot and stopped profile boundaries; not runtime or timing proof",
+    "events": 47,
+    "failed_allocations": 0,
+    "backing_storage_bytes": {
+      "global_zone": 108544,
+      "gap_zone": 11312,
+      "tail_zone": 78384
+    },
+    "allocator_sha256": "a2079030d5963a90bb487f0ed876429ae552c717062ba477b5ada6735527e1dc"
+  },
+  "graphics": {
+    "items": 25,
+    "item_texture_bytes": 3200,
+    "vdp1_texture_capacity_bytes": 451832,
+    "inline_clut_bytes": 512,
+    "center_help_bytes": 1248,
+    "center_help_glyphs": 38,
+    "vdp2_bitmap_bytes": 524288,
+    "sprite_limit": 2400,
+    "command_limit": 512,
+    "compound_cache_limit": 256
+  },
+  "sound_ram": {
+    "scope": "Static current audio catalog and unchanged loader/ring layout",
+    "capacity_bytes": 524288,
+    "reserved_low_bytes": 4096,
+    "resident_pcm_bytes": 392768,
+    "music_ring_aligned_bytes": 65568,
+    "transient_capacity_bytes": 61856,
+    "largest_transient_asset": "F07.PCM",
+    "largest_transient_bytes": 59580,
+    "remaining_after_largest_transient_bytes": 2276
+  },
+  "physical_saturn_tested": false,
+  "passed": true,
+  "baseline_comparison": {
+    "baseline_release": "caller-supplied baseline ELF",
+    "scope": "Compare memory layout and item pixels with the supplied baseline. Memory bounds remain required.",
+    "baseline_elf_sha256": "783961883902154176741fa4e617e76b91d2c76ad2a4b139e9400f8c26b0450d",
+    "same_allocated_section_names": true,
+    "same_allocated_section_layout": {
+      "JO_START": true,
+      ".text": false,
+      ".rodata": true,
+      ".data": true,
+      ".bss": false,
+      "JO_WORK": true
+    },
+    "section_bytes_equal": {
+      "JO_START": false,
+      ".text": false,
+      ".rodata": true,
+      ".data": true
+    },
+    "item_atlas": {
+      "bytes": 3200,
+      "candidate_sha256": "30d051e4da2db9bf8c3991ce5909af4d76955796cdca06c130bbe6b70d7e4637",
+      "baseline_sha256": "30d051e4da2db9bf8c3991ce5909af4d76955796cdca06c130bbe6b70d7e4637",
+      "bytes_equal": true
+    }
+  }
+}

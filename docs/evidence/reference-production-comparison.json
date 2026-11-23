@@ -1,0 +1,14 @@
+{
+  "baseline": "SuperPang 1.3",
+  "candidate": "SuperPang 1.4",
+  "compared_production_files": 263,
+  "changed_files": [
+    "jo_engine/backup.c",
+    "jo_engine/internal/smpc.h",
+    "jo_engine/smpc.c",
+    "makefile"
+  ],
+  "missing": [],
+  "extra": [],
+  "physical_saturn_tested": false
+}

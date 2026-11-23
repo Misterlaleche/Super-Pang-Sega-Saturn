@@ -1,0 +1,40 @@
+name: Fallo o diferencia respecto al arcade
+description: Problemas de juego, imagen, sonido, rendimiento o carga.
+title: "[Fallo] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versión o commit
+      description: Si has compilado la imagen, añade su SHA-256.
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Dónde ocurre
+      options:
+        - Saturn real
+        - Mednafen
+        - Otro emulador
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Equipo y configuración
+      description: Modelo/región, método de carga, cartuchos y mandos; o versión y ajustes del emulador.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Cómo reproducirlo
+      description: Modo, fase y secuencia de acciones. Indica qué ocurre y qué esperabas.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Comprobaciones o material de apoyo
+      description: Registros o una grabación breve si ayudan. No adjuntes ROMs, BIOS ni imágenes de disco.
